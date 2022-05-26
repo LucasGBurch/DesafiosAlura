@@ -1,0 +1,10 @@
+.vagas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    height: 112.375rem;
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 6rem 0;
+}

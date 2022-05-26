@@ -1,0 +1,58 @@
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    height: 30vh;
+    max-width: 76rem;
+    padding: 4rem;
+}
+
+.depoimentos__texto {
+    font-family: Inter, sans-serif;
+    max-width: 68rem;
+}
+
+.depoimentos__texto--sub {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 600;
+
+    height: 1.25rem;
+}
+
+.depoimentos__texto--titulo {
+    font-size: 28px;
+    font-weight: 500;
+
+    margin: 1rem 0;
+}
+
+.depoimentos__pessoa {
+    margin: 2rem 4rem 4rem 4rem;
+}
+
+.depoimentos__pessoa--imagem {
+    margin-bottom: 1rem;
+}
+
+.depoimentos__pessoa--nome {
+    margin-bottom: 0.25rem;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.depoimentos__pessoa--cargo {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .depoimentos {
+        height: 50vh;
+        padding: 6rem 2rem;
+    }
+}

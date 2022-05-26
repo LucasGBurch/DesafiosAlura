@@ -1,0 +1,6 @@
+:root {
+    /*Tendo este primeiro root já basta para todas as CSS, por ser da root*/
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --footer-color: #98a2b3;
+}

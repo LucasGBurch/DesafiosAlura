@@ -1,0 +1,33 @@
+.vagas-abertas {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-around;
+
+    padding: 2rem 4rem 0 4rem;
+    height: 66%;
+    margin: 0 20%;
+}
+
+.vagas-abertas__titulo {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.vagas-abertas__area {
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+}
+
+.vagas-abertas__area--nome {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.vagas-abertas__area--info {
+    margin-top: 1.5rem;
+}
