@@ -1,0 +1,32 @@
+.principal {
+    align-items: center;
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-geral);
+    height: 528px;
+    justify-content: space-evenly;
+    width: 350px;
+
+    background-image: url('../../assets/formas/forma2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.principal__texto {
+    border: 1px var(--cor-preta-transparente);
+    color: var(--cor-branca);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-geral);
+    font-weight: 400;
+    font-size: 16px;
+    height: 72px;
+    line-height: 150%;
+    padding: 16px;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--cor-preta), 0 0 1px var(--cor-preta), 0 0 5px var(--cor-preta);
+    width: 248px;
+}
+
