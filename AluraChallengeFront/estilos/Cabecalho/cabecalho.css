@@ -1,17 +1,22 @@
 .cabecalho {
-    background-color: var(--cor-azul);
+    background-color: var(--cor-branca);
     background-image: url('../../assets/formas/forma1.png');
     display: flex;
     flex-direction: column;
     height: 295px;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 350px;
 }
 
+.primeiro {
+    background-color: var(--cor-azul);
+}
+
 .cabecalho__navegacao {
-    align-items: flex-start;
     flex-direction: row;
-    justify-content: flex-start;
+    margin-bottom: 48px;
+
+    padding: 20% 0
 }
 
 .cabecalho__titulo {
@@ -19,8 +24,6 @@
     color: var(--cor-branca);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 168px;
 }
 
 .cabecalho__subtitulo {
@@ -30,7 +33,7 @@
     font-size: 26px;
     justify-content: center;
     line-height: 48px;
-    padding-top: 24px;
+    padding: 24px;
 }
 
 .cabecalho__navegacao--home {
@@ -38,13 +41,8 @@
     border: none;
     height: 23px;
 
-    bottom: 92.26%;
-    left: 13.33%;
-    position: absolute;
-    right: 81.33%;
-    top: 5.23%;
-
-    padding-top: 48px;
+    left: 12%;
+    position: relative;
 }
 
 .cabecalho__navegacao--msg {
@@ -52,11 +50,6 @@
     border: none;
     height: 19px;
 
-    position: absolute;
-    left: 34.95%;
-    right: 58.63%;
-    top: 5.47%;
-    bottom: 92.47%;
-
-    padding-top: 50px;
+    left: 25%;
+    position: relative;
 }
