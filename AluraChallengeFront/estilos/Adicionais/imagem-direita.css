@@ -1,0 +1,11 @@
+.imagem-right {
+    background-image: url('../../assets/formas/forma2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100%;
+    left: 78%;
+    margin-left: 20px;
+    top: 200px;
+    width: 20%;
+    position: absolute;
+}

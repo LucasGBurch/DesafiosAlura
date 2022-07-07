@@ -1,11 +1,14 @@
 .rodape {
     align-items: center;
     background-color: var(--cor-azul-esverdeado);
+    box-sizing: border-box;
     color: var(--cor-branca);
     display: flex;
     flex-direction: column;
     height: 104px;
     justify-content: center;
+
+    min-width: 350px;
     position: absolute;
-    width: 350px;
+    width: 100%;
 }

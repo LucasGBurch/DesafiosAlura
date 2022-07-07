@@ -1,5 +1,10 @@
 .pata {
+    background-image: url('../../assets/img/patas.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 215px;
-    top: 0px;
 }
+
+

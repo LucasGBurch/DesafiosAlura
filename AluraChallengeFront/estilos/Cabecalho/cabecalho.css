@@ -1,11 +1,16 @@
 .cabecalho {
+    align-items: center;
     background-color: var(--cor-branca);
     background-image: url('../../assets/formas/forma1.png');
+    background-position: top left;
+    background-size: auto;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     height: 295px;
-    justify-content: space-evenly;
-    width: 350px;
+    min-width: 350px;
+    width: 100%;
 }
 
 .cabecalho-primeiro {
@@ -22,18 +27,30 @@
 
 .cabecalho__navegacao--home {
     background-color: var(--cor-azul-esverdeado);
+    background-image: url('../../assets/img/casa.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
     border: none;
-    height: 23px;
+    left: 13%;
+    top: 5.5%;
 
-    left: 12%;
-    position: relative;
+    height: 23px;
+    width: 20px;
+
+    position: absolute;
 }
 
 .cabecalho__navegacao--msg {
     background-color: var(--cor-azul-esverdeado);
+    background-image: url('../../assets/img/mensagens.png');
+    background-position: top left;
+    background-repeat: no-repeat;
     border: none;
+    left: 35%;
+    top: 6%;
+    
     height: 19px;
+    width: 24px;
 
-    left: 25%;
-    position: relative;
+    position: absolute;
 }

@@ -2,11 +2,12 @@
     background-image: url('../../../assets/logoBranco.png');
     background-repeat: no-repeat;
 
-    margin: 168px 77.95px 81px 87.5px;
+    margin: auto;
 
     position: absolute;
 
     height: 46px;
-    width: 186.67px;
+    top: 25%;
+    width: 190px;
 }
 

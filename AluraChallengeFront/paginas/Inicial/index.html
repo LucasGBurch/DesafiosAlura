@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../../estilos/Paginas/Inicial/inicio-logo.css">
   <link rel="stylesheet" href="../../estilos/Paginas/Inicial/inicio-subtitulo.css">
   <link rel="stylesheet" href="../../estilos/Paginas/Inicial/inicio-principal.css">
+  <link rel="stylesheet" href="../../estilos/Adicionais/imagem-direita.css">
 
   <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
 </head>
@@ -21,37 +22,35 @@
   <header class="cabecalho cabecalho-primeiro">
     <nav class="cabecalho__navegacao">
       <button class="cabecalho__navegacao--home">
-        <img src="../../assets/img/casa.png" alt="Botão casa para home">
       </button>
       <button class="cabecalho__navegacao--msg">
-        <img src="../../assets/img/mensagens.png" alt="Botão mensagens">
       </button>
     </nav>
-    
+
     <div class="logo"></div>
 
     <h3 class="subtitulo">Boas-Vindas!</h3>
   </header>
-  
+
   <main class="principal">
 
-    <p class="principal__texto">
-      Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!
-    </p>
+    <section class="principal__elementos">
+      <p class="principal__elementos--texto">
+        Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!
+      </p>
+      <a href="../Login/index.html"><button class="principal__elementos--botoes botao">Já tenho conta</button></a>
+      
+      <a href="../Cadastro/index.html"><button class="principal__elementos--botoes botao">Quero me
+        cadastrar</button></a>
+        
+      <div class="imagem-right"></div>
 
-    <a href="../Login/index.html"><button class="principal__botoes botao">Já tenho conta</button></a>
+      <div class="principal__imagem--bot">
+        <img src="../../assets/img/ilustacao1.png" alt="">
+      </div>
+    </section>
 
-    <a href="../Cadastro/index.html"><button class="principal__botoes botao">Quero me cadastrar</button></a>
-
-    <div class="principal__imagemright">
-      <img src="../../assets/formas/forma2.png" alt="">
-    </div>
-
-    <div class="principal__imagembot">
-      <img src="../../assets/img/ilustacao1.png" alt="">
-    </div>
   </main>
-
 
   <footer class="rodape">
     <span>2022 - Desenvolvido por Alura.</span>
