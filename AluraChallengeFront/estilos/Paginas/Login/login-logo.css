@@ -1,0 +1,10 @@
+.logo {
+    background-image: url('../../../assets/logoAdopet.png');
+    background-repeat: no-repeat;
+    
+    height: 35px;
+    left: 109px;
+    position: absolute;
+    top: 156px;
+    width: 145px;
+}

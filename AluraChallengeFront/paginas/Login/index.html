@@ -2,56 +2,80 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopet</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopet</title>
 
-    <!--Inclui reset-->
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
-    <link rel="stylesheet" href="../../estilos/Paginas/Login/Principal/principal.css">
+  <link rel="stylesheet" href="../../style.css">
+  <!--Inclui reset-->
+  <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Login/login-logo.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Login/login-texto.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Login/login-principal.css">
 
-    <!--Adicionais sobrescrevem todos menos o footer; fica em penúltimo:-->
-    <link rel="stylesheet" href="../../estilos/Adicionais/adicionais.css">
-    <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
+
+  <link rel="stylesheet" href="../../estilos/Adicionais/pata.css">
+  <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__navegacao">
-            <button class="cabecalho__navegacao--home">
-                <img src="../../assets/img/casa.png" alt="Botão casa para home">
-            </button>
-            <button class="cabecalho__navegacao--msg">
-                <img src="../../assets/img/mensagens.png" alt="Botão mensagens">
-            </button>
-        </nav>
+  <header class="cabecalho">
+    <nav class="cabecalho__navegacao">
+      <button class="cabecalho__navegacao--home">
+        <img src="../../assets/img/casa.png" alt="Botão casa para home">
+      </button>
+      <button class="cabecalho__navegacao--msg">
+        <img src="../../assets/img/mensagens.png" alt="Botão mensagens">
+      </button>
+    </nav>
 
-        <h1 class="cabecalho__titulo">
-            <img src="../../assets/logoAdopet.png" alt="Logo versão azul" class="cabecalho__titulo--logo">
-            <div class="cabecalho__texto">
-                <p>
-                    Ainda não tem cadastro?
-                </p> <br />
-                <p>
-                    Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
-                </p>
-            </div>
-        </h1>
-    </header>
+    <div class="pata">
+      <img src="../../assets/img/patas.png" alt="">
+    </div>
 
-    <main class="principal">
+    <div class="logo"></div>
 
-        <button class="principal__botoes botao">Já tenho conta</button>
-        <button class="principal__botoes botao">Quero me cadastrar</button>
+    <div class="texto">
+      <p>Ainda não tem cadastro?</p>
+      <br />
+      <p>
+        Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
+      </p>
+    </div>
 
-    </main>
+  </header>
+
+  <main class="principal">
+
+    <form class="principal__formulario">
+
+      <label for="" class="principal__formulario--label">Email</label>
+      <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email">
+
+      <label for="" class="principal__formulario--label">Nome</label>
+      <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo">
+
+      <label for="" class="principal__formulario--label">Senha</label>
+      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha">
+
+      <label for="" class="principal__formulario--label">Confirma sua senha</label>
+      <input type="password" class="principal__formulario--texto" placeholder="Repita a senha criada acima">
+
+    </form>
+
+    <button class="principal__botao botao-menor">Cadastrar</button>
+
+    <div class="principal__imagemleft">
+      <img src="../../assets/formas/forma2-1.png" alt="">
+    </div>
+
+  </main>
 
 
-    <footer class="rodape">
-        <span>2022 - Desenvolvido por Alura.</span>
-    </footer>
+  <footer class="rodape">
+    <span>2022 - Desenvolvido por Alura.</span>
+  </footer>
 </body>
 
 </html>

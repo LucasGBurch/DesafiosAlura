@@ -7,9 +7,8 @@
     font-family: var(--fonte-geral);
     height: 518px;
     justify-content: space-around;
+    padding-right: 18px;
     width: 350px;
-
-
 }
 
 .principal__texto {
@@ -29,11 +28,11 @@
 }
 
 .principal__imagemright {
-    position: absolute;
-    width: 84.03px;
     height: 415px;
-    left: 279px;
+    left: 280px;
+    position: absolute;
     top: 199px;
+    width: 84.03px;
 }
 
 .principal__imagembot {
