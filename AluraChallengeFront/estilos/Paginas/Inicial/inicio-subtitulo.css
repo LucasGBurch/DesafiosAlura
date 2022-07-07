@@ -1,0 +1,19 @@
+.subtitulo {
+    text-align: center;
+    color: var(--cor-branca);
+    font-family: var(--fonte-titulo);
+
+    margin: 238px 94.61px 9px 102.5px;
+    padding-top: 24px;
+
+    position: absolute;
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+
+    width: 155px;
+
+}

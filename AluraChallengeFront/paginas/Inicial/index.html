@@ -7,14 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopet</title>
 
-  <link rel="stylesheet" href="../../style.css"> <!--Inclui reset-->
+  <link rel="stylesheet" href="../../style.css">
+  <!--Inclui reset-->
   <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
-  <link rel="stylesheet" href="../../estilos/Principal/principal.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Inicial/inicio-logo.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Inicial/inicio-subtitulo.css">
+  <link rel="stylesheet" href="../../estilos/Paginas/Inicial/inicio-principal.css">
+
   <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
 </head>
 
 <body>
-  <header class="cabecalho primeiro">
+  <header class="cabecalho cabecalho-primeiro">
     <nav class="cabecalho__navegacao">
       <button class="cabecalho__navegacao--home">
         <img src="../../assets/img/casa.png" alt="Botão casa para home">
@@ -23,26 +27,27 @@
         <img src="../../assets/img/mensagens.png" alt="Botão mensagens">
       </button>
     </nav>
+    
+    <div class="logo"></div>
 
-    <h1 class="cabecalho__titulo">
-      <img 
-        src="../../assets/logoBranco.png"
-        alt="Logo versão branca"
-        class="cabecalho__titulo--logo"
-        >
-      <h2 class="cabecalho__subtitulo">Boas-vindas!</h2>
-      </h1>
+    <h3 class="subtitulo">Boas-Vindas!</h3>
   </header>
-
+  
   <main class="principal">
+
     <p class="principal__texto">
       Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!
     </p>
 
-    <button class="principal__botoes botao">Já tenho conta</button>
-    <button class="principal__botoes botao">Quero me cadastrar</button>
+    <a href="../Login/index.html"><button class="principal__botoes botao">Já tenho conta</button></a>
 
-    <div class="principal__imagem">
+    <a href="../Cadastro/index.html"><button class="principal__botoes botao">Quero me cadastrar</button></a>
+
+    <div class="principal__imagemright">
+      <img src="../../assets/formas/forma2.png" alt="">
+    </div>
+
+    <div class="principal__imagembot">
       <img src="../../assets/img/ilustacao1.png" alt="">
     </div>
   </main>

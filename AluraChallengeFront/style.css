@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --cor-azul: #3772FF;
@@ -23,7 +23,14 @@
     border-radius: 6px;
     color: var(--cor-branca);
 
-    padding: 8px;
+    font-family: var(--fonte-geral);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+
+    height: 40px;
+    line-height: 24px;
+
     width: 180px;
 }
 

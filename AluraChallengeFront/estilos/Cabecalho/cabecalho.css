@@ -8,32 +8,16 @@
     width: 350px;
 }
 
-.primeiro {
+.cabecalho-primeiro {
     background-color: var(--cor-azul);
 }
 
 .cabecalho__navegacao {
     flex-direction: row;
-    margin-bottom: 48px;
+    margin-bottom: 224px;
+    margin-top: 48px;
 
     padding: 20% 0
-}
-
-.cabecalho__titulo {
-    align-items: center;
-    color: var(--cor-branca);
-    display: flex;
-    flex-direction: column;
-}
-
-.cabecalho__subtitulo {
-    color: var(--cor-branca);
-    display: flex;
-    font-family: var(--fonte-titulo);
-    font-size: 26px;
-    justify-content: center;
-    line-height: 48px;
-    padding: 24px;
 }
 
 .cabecalho__navegacao--home {
