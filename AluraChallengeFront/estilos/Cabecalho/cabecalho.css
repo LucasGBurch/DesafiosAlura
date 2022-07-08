@@ -5,11 +5,12 @@
     background-position: top left;
     background-size: auto;
     background-repeat: no-repeat;
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     height: 295px;
-    min-width: 350px;
+    min-width: 320px;
     width: 100%;
 }
 

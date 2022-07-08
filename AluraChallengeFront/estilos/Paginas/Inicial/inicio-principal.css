@@ -1,5 +1,6 @@
 .principal {
     background-color: var(--cor-azul);
+    box-sizing: border-box;
     color: var(--cor-branca);
     font-family: var(--fonte-geral);
     height: 532px;

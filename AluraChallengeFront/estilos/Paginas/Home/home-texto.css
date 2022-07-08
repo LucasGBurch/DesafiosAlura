@@ -1,0 +1,20 @@
+.texto {
+    align-items: center;
+    color: var(--cor-azul);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-geral);
+    font-weight: 400;
+    font-size: 16px;
+    height: 71px;
+    line-height: 21px;
+    justify-content: center;
+
+    
+
+    padding-bottom: 16px;
+    position: absolute;
+    top: 203px;
+    text-align: center;
+    min-width: 312px;
+}

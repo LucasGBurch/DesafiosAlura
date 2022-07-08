@@ -2,6 +2,7 @@
     background-image: url('../../assets/formas/forma2.png');
     background-repeat: no-repeat;
     background-position: top right;
+    box-sizing: border-box;
     height: 100%;
     left: 78%;
     margin-left: 20px;

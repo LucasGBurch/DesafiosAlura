@@ -1,0 +1,78 @@
+.principal {
+    align-items: center;
+    background-color: var(--cor-branca);
+    color: var(--cor-branca);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, 1fr);
+    font-family: var(--fonte-geral);
+    height: 1892px;
+    min-width: 320px;
+    padding-top: 16px;
+}
+
+.principal__imagem {
+    display: grid;
+    grid-template-columns: 48% 52%;
+
+    height: 196px;
+    min-width: 320px;
+    z-index: 1;
+}
+
+.principal__imagem--pet {
+    height: 148px;
+    width: 148px;
+    padding: 24px 0px 24px 24px;
+}
+
+.principal__dados {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 24% 46% 12% 13%;
+    padding-left: 16px;
+}
+
+.principal__dados--nome {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+.principal__dados--descricao {
+    color: var(--cor-cinza);
+    font-family: var(--fonte-geral);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.principal__dados--cidade {
+    color: var(--cor-cinza);
+    font-family: var(--fonte-geral);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.principal__dados--contato {
+    color: var(--cor-cinza);
+    font-family: var(--fonte-geral);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    padding-bottom: 19px;
+}
+
+.contato-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 15% 84%;
+}
