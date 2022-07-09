@@ -2,8 +2,13 @@
     background-color: var(--cor-azul);
     box-sizing: border-box;
     color: var(--cor-branca);
+
+    display: grid;
+    grid-template-columns: 24% 52% 24%;
+    grid-template-rows: 1fr;
+
     font-family: var(--fonte-geral);
-    height: 532px;
+    height: 540px;
 
     margin-right: 30px;
     min-width: 350px;
@@ -14,8 +19,24 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 368px;
+
+    grid-column: 2;
+
+    height: 700px;
+}
+
+.principal__elementos--subtitulo {
     text-align: center;
+    color: var(--cor-branca);
+    font-family: var(--fonte-titulo);
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+    
+    grid-column: 2;
 }
 
 .principal__elementos--botoes {
@@ -41,8 +62,18 @@
 }
 
 .principal__imagem--bot {
-    position: absolute;
-    top: 532px;
     margin-right: 48px;
+    margin-top: 24px;
+    top: 500px;
+}
+
+.principal__imagem {
+    background-image: url('../../../assets/formas/forma2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    grid-column: 3 / 5;
+
+    min-width: 70px;
 }
 

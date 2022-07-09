@@ -11,6 +11,15 @@
     min-width: 350px;
 }
 
+.principal__paragrafo {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .principal__formulario {
     display: flex;
     flex-direction: column;

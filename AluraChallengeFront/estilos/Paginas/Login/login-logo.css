@@ -2,9 +2,8 @@
     background-image: url('../../../assets/logoAdopet.png');
     background-repeat: no-repeat;
     
-    margin: auto;
     height: 35px;
+    min-width: 145px;
     position: absolute;
     top: 25%;
-    min-width: 145px;
 }

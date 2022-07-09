@@ -3,14 +3,15 @@
     background-color: var(--cor-branca);
     background-image: url('../../assets/formas/forma1.png');
     background-position: top left;
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40% 25% 35%;
     height: 295px;
-    min-width: 320px;
+    min-width: 350px;
     width: 100%;
 }
 
@@ -19,39 +20,59 @@
 }
 
 .cabecalho__navegacao {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 224px;
-    margin-top: 48px;
+    justify-content: space-evenly;
+    grid-column: 1 / 4;
+}
 
-    padding: 20% 0
+.cabecalho__textos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.cabecalho__textos--subtitulo {
+    color: var(--cor-branca);
+    font-family: var(--fonte-titulo);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+    margin-top: 24px;
 }
 
 .cabecalho__navegacao--home {
     background-color: var(--cor-azul-esverdeado);
     background-image: url('../../assets/img/casa.svg');
-    background-position: top left;
     background-repeat: no-repeat;
     border: none;
-    left: 13%;
-    top: 5.5%;
+    border-radius: 4px;
 
     height: 23px;
     width: 20px;
 
-    position: absolute;
 }
 
 .cabecalho__navegacao--msg {
     background-color: var(--cor-azul-esverdeado);
     background-image: url('../../assets/img/mensagens.png');
-    background-position: top left;
     background-repeat: no-repeat;
     border: none;
-    left: 35%;
-    top: 6%;
-    
+    border-radius: 4px;
+
     height: 19px;
     width: 24px;
+}
 
-    position: absolute;
+.pata {
+    background-image: url('../../assets/img/patas.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
 }
