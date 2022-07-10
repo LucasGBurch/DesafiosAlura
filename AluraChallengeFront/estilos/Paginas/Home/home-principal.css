@@ -6,9 +6,8 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, 1fr);
     font-family: var(--fonte-geral);
-    height: 1892px;
+    height: 1888px;
     min-width: 320px;
-    padding-top: 16px;
 }
 
 .principal__imagem {

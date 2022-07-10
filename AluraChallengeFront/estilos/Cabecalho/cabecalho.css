@@ -26,12 +26,16 @@
     background-image: url('../../assets/img/usuario.png'), url('../../assets/formas/forma1.png');
     background-repeat: no-repeat, no-repeat;
     background-position: top right, top left;
+    background-size: initial;
+    background-position-x: 90%, left;
+    background-position-y: 15%, top;
 }
 
 .cabecalho-perfil {
     background-image: url('../../assets/img/usuario-perfil.png'), url('../../assets/formas/forma1.png');
     background-repeat: no-repeat, no-repeat;
     background-position: top right, top left;
+    background-size: initial;
 }
 
 .cabecalho-primeiro {
@@ -81,6 +85,13 @@
     top: 203px;
     text-align: center;
     min-width: 312px;
+}
+
+.cabecalho__paragrafo-unico {
+    justify-content: flex-start;
+    line-height: 20px;
+    margin: 0;
+    top: 168px;
 }
 
 .cabecalho__navegacao--home {

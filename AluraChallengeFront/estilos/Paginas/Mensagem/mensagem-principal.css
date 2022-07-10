@@ -1,0 +1,64 @@
+.principal {
+    align-items: center;
+    background-color: var(--cor-branca);
+    color: var(--cor-branca);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-geral);
+    height: 540px;
+    justify-content: space-evenly;
+    min-width: 350px;
+}
+
+.principal__formulario {
+    background-color: var(--cor-cinza-claro-fundos);
+    display: flex;
+    flex-direction: column;
+
+    height: 636px;
+    min-width: 312px;
+    padding: 24px 16px;
+    z-index: 1;
+}
+
+.principal__formulario--label {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-size: 16px;
+    font-weight: 600;
+    height: 25px;
+    line-height: 24px;
+    min-width: 312px;
+    padding-bottom: 8px;
+}
+
+.principal__formulario--label:last-child {
+    padding-bottom: 16px;
+}
+
+.principal__formulario--texto {
+    background-color: var(--cor-branca);
+    border: none;
+    border-radius: 6px;
+    color: var(--cor-cinza-claro);
+    font-family: var(--fonte-geral);
+    font-size: 12px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 280px;
+}
+
+.principal__formulario--texto:last-child {
+    height: 172px;
+}
+
+.principal__formulario--texto:last-child {
+    margin-bottom: 0px;
+}
+
+.principal__botao {
+    margin-bottom: 72px;
+}
