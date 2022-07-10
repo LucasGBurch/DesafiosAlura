@@ -2,11 +2,12 @@
     align-items: center;
     background-color: var(--cor-branca);
     color: var(--cor-branca);
-    display: flex;
-    flex-direction: column;
+    display: grid;
     font-family: var(--fonte-geral);
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 60%;
     height: 520px;
-    justify-content: space-evenly;
     padding-top: 16px;
     min-width: 350px;
 }
@@ -17,16 +18,34 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+
+    grid-column: 2;
+    grid-row: 1;
     line-height: 21px;
+    margin-bottom: 120px;
+
+    text-align: center;
 }
 
 .principal__formulario {
+    align-items: center;
     display: flex;
     flex-direction: column;
 
     height: 336px;
+
+    grid-column: 2;
+    grid-row: 2 / 3;
     min-width: 312px;
     z-index: 1;
+}
+
+.principal__esquece-senha {
+    color: var(--cor-coral);
+}
+
+.principal__botao {
+    margin-top: 24px;
 }
 
 .principal__formulario--label {
@@ -53,14 +72,6 @@
     margin-bottom: 20px;
     text-align: center;
     min-width: 312px;
-}
-
-.principal__formulario--texto:last-child {
-    margin-bottom: 0px;
-}
-
-.principal__botao {
-    margin-bottom: 72px;
 }
 
 .principal__imagemleft {
