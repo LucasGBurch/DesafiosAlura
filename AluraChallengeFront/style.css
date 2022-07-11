@@ -18,6 +18,14 @@
 
 /*CONFIGURAÇÕES GERAIS*/
 
+body {
+    background-color: var(--cor-branca);
+}
+
+.body-primeiro {
+    background-color: var(--cor-azul);
+}
+
 .botao {
     background-color: var(--cor-coral);
     border-radius: 6px;
@@ -48,6 +56,74 @@
     line-height: 24px;
 
     width: 148px;
+}
+
+@media screen and (min-width: 600px) {
+    .botao {
+        background-color: var(--cor-coral);
+        border-radius: 6px;
+        color: var(--cor-branca);
+    
+        font-family: var(--fonte-geral);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+    
+        height: 40px;
+        line-height: 24px;
+    
+        width: 180px;
+    }
+    
+    .botao-menor {
+        background-color: var(--cor-coral);
+        border-radius: 6px;
+        color: var(--cor-branca);
+    
+        font-family: var(--fonte-geral);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+    
+        height: 40px;
+        line-height: 24px;
+    
+        width: 148px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .botao {
+        background-color: var(--cor-coral);
+        border-radius: 6px;
+        color: var(--cor-branca);
+    
+        font-family: var(--fonte-geral);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+    
+        height: 40px;
+        line-height: 24px;
+    
+        width: 180px;
+    }
+    
+    .botao-menor {
+        background-color: var(--cor-coral);
+        border-radius: 6px;
+        color: var(--cor-branca);
+    
+        font-family: var(--fonte-geral);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+    
+        height: 40px;
+        line-height: 24px;
+    
+        width: 148px;
+    }
 }
 
 
