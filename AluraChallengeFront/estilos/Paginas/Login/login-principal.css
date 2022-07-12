@@ -1,7 +1,5 @@
 .principal {
     align-items: center;
-    background-color: var(--cor-branca);
-    color: var(--cor-branca);
     display: grid;
     font-family: var(--fonte-geral);
 

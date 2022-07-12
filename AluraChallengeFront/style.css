@@ -33,13 +33,20 @@
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
     background-size: 352px 295px, 84px 415px;
+
+    height: 917px;
 }
 
 .pata {
-    background-image: url('./assets/formas/forma1.png'), url('./assets/img/patas.png'), url('./assets/formas/forma2-1.png');
-    background-position: top left, top right, center left;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 352px 295px, 84px 415px;
+    background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2-1.png');
+    background-position: top right, top left, center left;
+    background-repeat: no-repeat;
+    background-size: 127px 227px, 352px 295px, 83px 415px;
+
+    background-position-y: top, top, 368px;
+
+    height: 917px;
+
 }
 
 .usuario {
@@ -48,6 +55,8 @@
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
     background-size: 352px 295px, 84px 415px;
+
+    height: 917px;
 }
 
 .perfil {
@@ -56,6 +65,8 @@
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
     background-size: 352px 295px, 84px 415px;
+
+    height: 917px;
 }
 
 .body-primeiro {
@@ -100,7 +111,7 @@
 
 /*AJUSTES RESPONSIVOS*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
     .botao {
         background-color: var(--cor-coral);
@@ -130,15 +141,30 @@
     }
 
     .pata {
-        background-image: url('./assets/formas/forma1.png'), url('./assets/img/patas.png'), url('./assets/formas/forma2.png');
-        background-position: top left, top right, center right;
-        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+        background-position: top right, top left, center right;
+        background-repeat: no-repeat;
+        background-size: 224px 338px, 561px 470px, 135px 664px;
+
+        background-position-y: top, top, 304px;
+
+        height: 1200px;
     }
 
     .perfil {
         background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma2.png');
         background-position: top left, top right, center right;
         background-repeat: no-repeat, no-repeat, no-repeat;
+
+        height: 1200px;
+    }
+
+    .usuario {
+        background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario.png'), url('./assets/formas/forma2.png');
+        background-position: top left, top right, center right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+
+        height: 1200px;
     }
 }
 
@@ -155,10 +181,24 @@
         height: 1025px;
     }
 
+    .pata {
+        height: 1025px;
+    }
+
+    .perfil {
+        background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma2.png');
+        background-position: top left, top right, center right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+
+        height: 1025px;
+    }
+
     .usuario {
         background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario.png'), url('./assets/formas/forma2.png');
         background-position: top left, top right, center right;
         background-repeat: no-repeat, no-repeat, no-repeat;
+
+        height: 1025px;
     }
 }
 

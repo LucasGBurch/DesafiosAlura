@@ -2,7 +2,7 @@
     align-items: center;
 
     background-image: url('../../../assets/img/ilustacao1.png');
-    background-position: center 108%;
+    background-position: center 105%;
     background-repeat: no-repeat;
 
     color: var(--cor-branca);
@@ -10,7 +10,7 @@
     flex-direction: column;
 
     font-family: var(--fonte-geral);
-    height: 548px;
+    height: 645px;
 
 }
 
@@ -23,7 +23,16 @@
     margin-bottom: 24px;
 }
 
-.principal__elementos--subtitulo {
+.principal__elementos--textos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.subtitulo {
     text-align: center;
     color: var(--cor-branca);
     font-family: var(--fonte-titulo);
@@ -49,7 +58,7 @@
     font-size: 16px;
     height: 72px;
     justify-content: center;
-    line-height: 150%;
+    line-height: 24px;
     margin-top: 16px;
     padding: 12px;
     text-align: center;
@@ -57,13 +66,20 @@
     width: 248px;
 }
 
-.principal__imagem--bot {
-    margin-right: 48px;
-}
 
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .principal {
-        height: 627px;
+        height: 823px;
+    }
+/*ONDE PAREI, AJUSTAR TEXTOSDE INÍCIO*/
+    .princi .principal__elementos--texto-maior {
+        align-items: center;
+        color: var(--cor-branca);
+        font-family: var(--fonte-geral);
+        font-weight: 400;
+        height: 78px;
+        font-size: 18px;
+        line-height: 26px;
+        width: 334px;
     }
 }

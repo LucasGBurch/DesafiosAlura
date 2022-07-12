@@ -12,3 +12,9 @@
     position: absolute;
     width: 100%;
 }
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        height: 80px;
+    }
+}
