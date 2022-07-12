@@ -16,21 +16,60 @@
     --fonte-geral: 'Poppins'
 }
 
-/*CONFIGURAÇÕES GERAIS*/
+/*CONFIGURAÇÕES GERAIS DE BG DO BODY:*/
 
-body {
-    background-color: var(--cor-branca);
+.forma2 {
+    background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+    background-position: top left, center right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 352px 295px, 84px 415px;
+
+    height: 917px;
+}
+
+.forma2-1 {
+    background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2-1.png');
+    background-position: top left, center left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    background-size: 352px 295px, 84px 415px;
+}
+
+.pata {
+    background-image: url('./assets/formas/forma1.png'), url('./assets/img/patas.png'), url('./assets/formas/forma2-1.png');
+    background-position: top left, top right, center left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 352px 295px, 84px 415px;
+}
+
+.usuario {
+    background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario.png');
+    background-position: top left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    background-size: 352px 295px, 84px 415px;
+}
+
+.perfil {
+    background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario-perfil.png');
+    background-position: top left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    background-size: 352px 295px, 84px 415px;
 }
 
 .body-primeiro {
     background-color: var(--cor-azul);
 }
 
+/*BOTÕES*/
+
 .botao {
     background-color: var(--cor-coral);
     border-radius: 6px;
     color: var(--cor-branca);
 
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
     font-family: var(--fonte-geral);
     font-size: 15px;
     font-style: normal;
@@ -47,6 +86,7 @@ body {
     border-radius: 6px;
     color: var(--cor-branca);
 
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
     font-family: var(--fonte-geral);
     font-size: 15px;
     font-style: normal;
@@ -58,90 +98,154 @@ body {
     width: 148px;
 }
 
+/*AJUSTES RESPONSIVOS*/
+
 @media screen and (min-width: 600px) {
+
     .botao {
         background-color: var(--cor-coral);
         border-radius: 6px;
         color: var(--cor-branca);
-    
+
         font-family: var(--fonte-geral);
-        font-size: 15px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
-    
-        height: 40px;
+
+        height: 48px;
         line-height: 24px;
-    
-        width: 180px;
+
+        width: 344px;
     }
-    
+
     .botao-menor {
-        background-color: var(--cor-coral);
-        border-radius: 6px;
-        color: var(--cor-branca);
-    
-        font-family: var(--fonte-geral);
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-    
-        height: 40px;
-        line-height: 24px;
-    
-        width: 148px;
+        font-size: 18px;
+        width: 164px;
+    }
+
+    .forma2 {
+        background-size: 561px 470px, 134.5px 664px;
+
+        height: 1200px;
+    }
+
+    .pata {
+        background-image: url('./assets/formas/forma1.png'), url('./assets/img/patas.png'), url('./assets/formas/forma2.png');
+        background-position: top left, top right, center right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+
+    .perfil {
+        background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma2.png');
+        background-position: top left, top right, center right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     .botao {
-        background-color: var(--cor-coral);
-        border-radius: 6px;
-        color: var(--cor-branca);
-    
-        font-family: var(--fonte-geral);
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-    
-        height: 40px;
-        line-height: 24px;
-    
-        width: 180px;
+        width: 362px;
     }
-    
+
     .botao-menor {
-        background-color: var(--cor-coral);
-        border-radius: 6px;
-        color: var(--cor-branca);
-    
-        font-family: var(--fonte-geral);
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-    
-        height: 40px;
-        line-height: 24px;
-    
-        width: 148px;
+        width: 174px;
+    }
+
+    .forma2 {
+        height: 1025px;
+    }
+
+    .usuario {
+        background-image: url('./assets/formas/forma1.png'), url('./assets/img/usuario.png'), url('./assets/formas/forma2.png');
+        background-position: top left, top right, center right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
     }
 }
 
 
 /*CONFIGURAÇÕES RESET:*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -149,25 +253,44 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

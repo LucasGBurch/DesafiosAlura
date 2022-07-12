@@ -1,9 +1,5 @@
 .cabecalho {
     align-items: center;
-    background-image: url('../../assets/formas/forma1.png');
-    background-position: top left;
-    background-size: contain;
-    background-repeat: no-repeat;
     box-sizing: border-box;
 
     display: grid;
