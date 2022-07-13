@@ -146,7 +146,7 @@
         background-repeat: no-repeat;
         background-size: 224px 338px, 561px 470px, 135px 664px;
 
-        background-position-y: top, top, 304px;
+        background-position-y: top, top, 268px;
 
         height: 1200px;
     }
@@ -183,6 +183,7 @@
 
     .pata {
         height: 1025px;
+        background-position-y: top, top, 180px;
     }
 
     .perfil {

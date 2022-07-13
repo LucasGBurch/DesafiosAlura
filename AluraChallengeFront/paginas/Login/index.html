@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="../../style.css">
   <!--Inclui reset-->
   <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
-  <link rel="stylesheet" href="../../estilos/Paginas/Login/login-logo.css">
-  <link rel="stylesheet" href="../../estilos/Paginas/Login/login-texto.css">
   <link rel="stylesheet" href="../../estilos/Paginas/Login/login-principal.css">
 
 
@@ -38,28 +36,26 @@
       </a>
     </nav>
 
-    <div class="cabecalho__textos">
-      <div class="logo"></div>
-      <br />
-    </div>
-
   </header>
 
   <main class="principal">
 
-    <p class="principal__paragrafo">Já tem conta? Faça seu login:</p>
+    <div class="principal__logo"></div>
+    <div class="principal__paragrafos">
+      <p>Já tem conta? Faça seu login:</p>
+    </div>
 
     <form class="principal__formulario">
 
       <label for="" class="principal__formulario--label">Email</label>
-      <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email">
+      <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required>
 
       <label for="" class="principal__formulario--label">Senha</label>
-      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha">
+      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha" required>
 
       <a href="" class="principal__esquece-senha"><span>Esqueci minha senha.</span></a>
 
-      <button class="principal__botao botao-menor">Entrar</button>
+      <button class="principal__botao botao-menor" type="submit">Entrar</button>
 
     </form>
 

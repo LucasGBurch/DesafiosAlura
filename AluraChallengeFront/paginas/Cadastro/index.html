@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="../../style.css">
   <!--Inclui reset-->
   <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
-  <link rel="stylesheet" href="../../estilos/Paginas/Cadastro/cadastro-logo.css">
-  <link rel="stylesheet" href="../../estilos/Paginas/Cadastro/cadastro-texto.css">
   <link rel="stylesheet" href="../../estilos/Paginas/Cadastro/cadastro-principal.css">
 
 
@@ -40,37 +38,36 @@
     </nav>
 
     </div>
-    
+
   </header>
-  
+
   <main class="principal">
 
-      <div class="principal__logo"></div>
-      <div class="principal__paragrafos">
-        <p>Ainda não tem cadastro?</p>
-      <br />
+    <div class="principal__logo"></div>
+    <div class="principal__paragrafos">
+      <p>Ainda não tem cadastro?</p>
       <p>
         Então, antes de buscar seu melhor amigo, precisamos de alguns dados:
       </p>
-      </div>
+    </div>
 
     <form class="principal__formulario">
 
       <label for="" class="principal__formulario--label">Email</label>
-      <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email">
+      <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required>
 
       <label for="" class="principal__formulario--label">Nome</label>
-      <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo">
+      <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo" required>
 
       <label for="" class="principal__formulario--label">Senha</label>
-      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha">
+      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha" required>
 
       <label for="" class="principal__formulario--label">Confirma sua senha</label>
-      <input type="password" class="principal__formulario--texto" placeholder="Repita a senha criada acima">
+      <input type="password" class="principal__formulario--texto" placeholder="Repita a senha criada acima" required>
 
     </form>
 
-    <button class="principal__botao botao-menor">Cadastrar</button>
+    <button class="principal__botao botao-menor" type="submit">Cadastrar</button>
 
   </main>
 
