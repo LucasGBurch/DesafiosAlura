@@ -3,9 +3,37 @@
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-geral);
-    height: 540px;
-    justify-content: space-evenly;
+    height: 659px;
+    justify-content: flex-start;
     min-width: 350px;
+}
+
+.principal__paragrafos {
+    align-items: center;
+    color: var(--cor-azul);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-geral);
+    font-weight: 400;
+    font-size: 16px;
+    height: 71px;
+    line-height: 21px;
+    justify-content: center;
+
+    position: absolute;
+    top: 203px;
+    text-align: center;
+    width: 312px;
+}
+
+.principal__logo {
+    background-image: url('../../../assets/logoAdopet.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 35px;
+    width: 143px;
 }
 
 .principal__formulario {
@@ -14,7 +42,6 @@
 
     height: 336px;
     min-width: 312px;
-    z-index: 1;
 }
 
 .principal__formulario--label {
@@ -57,4 +84,18 @@
     height: 415px;
     left: 1px;
     top: 368px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        height: 62px;
+        width: 252px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        height: 64px;
+        width: 260px;
+    }
 }

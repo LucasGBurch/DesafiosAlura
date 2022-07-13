@@ -39,6 +39,16 @@
     grid-row-start: 2;
 }
 
+.logo {
+    background-image: url('../../../assets/logoBranco.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 46px;
+    width: 187px;
+}
+
 .subtitulo {
     text-align: center;
     color: var(--cor-branca);
@@ -79,6 +89,11 @@
 
 
 @media screen and (min-width: 768px) {
+    .logo {
+        height: 62px;
+        width: 252px;
+    }
+
     .principal {
         height: 823px;
     }
@@ -109,3 +124,20 @@
         padding-top: 40px;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .logo {
+        height: 64px;
+        width: 260px;
+    }
+
+    .principal {
+        height: 814px;
+        top: 130px;
+    }
+
+    .principal__ilustracao {
+        background-size: 346px, 432px;
+    }
+}
+
