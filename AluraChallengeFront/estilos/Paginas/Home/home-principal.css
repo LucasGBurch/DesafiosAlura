@@ -1,22 +1,41 @@
 .principal {
     align-items: center;
-    background-color: var(--cor-branca);
+    box-sizing: border-box;
     color: var(--cor-branca);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 1fr);
+    display: flex;
+    flex-direction: column;
     font-family: var(--fonte-geral);
-    height: 1920px;
-    min-width: 360px;
+    height: 1960px;
+    min-width: 350px;
+}
+
+.principal__paragrafos {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-weight: 400;
+    font-size: 16px;
+    height: 40px;
+    line-height: 20px;
+    margin-bottom: 16px;
+
+    text-align: center;
+    width: 226px;
+}
+
+.principal__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
 }
 
 .principal__imagem {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: 48% 52%;
+    margin-bottom: 16px;
 
     height: 196px;
-    min-width: 360px;
-    z-index: 1;
+    width: 360px;
 }
 
 .principal__imagem--pet {
@@ -79,27 +98,52 @@
 
 @media screen and (min-width: 768px) {
     .principal {
+        height: 1156px;
+    }
+
+    .principal__paragrafos {
+        height: 48px;
+        width: 360px;
+    }
+
+    .principal__container {
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(5, 1fr);
-        height: 1108px;
     }
 
     .principal__imagem {
-        min-width: 344px;
-        padding: 16px;
+        width: 344px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .principal {
+        height: 740px;
+    }
+
+    .principal__paragrafos {
+        height: 20px;
+        margin-bottom: 24px;
+        width: 414px;
+    }
+
+    .principal__container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
-        height: 720px;
-        max-width: 1440px;
+        height: 620px;
+        margin: 0 160px;
+        width: 1120px;
     }
 
     .principal__imagem {
         min-width: 363px;
         padding: 16px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .principal {
+        height: 884px;
+        padding-top: 80px;
     }
 }

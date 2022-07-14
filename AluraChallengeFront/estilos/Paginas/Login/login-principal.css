@@ -16,7 +16,7 @@
     font-family: var(--fonte-geral);
     font-weight: 400;
     font-size: 16px;
-    height: 71px;
+    height: 21px;
     line-height: 21px;
     justify-content: flex-start;
 
@@ -31,15 +31,16 @@
     background-size: cover;
 
     height: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 56px;
     width: 143px;
 }
 
 .principal__formulario {
+    align-items: center;
     display: flex;
     flex-direction: column;
 
-    height: 336px;
+    height: 194px;
     padding: 24px;
     width: 312px;
 }
@@ -68,14 +69,20 @@
     line-height: 16px;
     margin-bottom: 20px;
     text-align: center;
+    width: 312px;
 }
 
 .principal__formulario--texto:last-child {
     margin-bottom: 0px;
 }
 
+.principal__esquece-senha {
+    color: var(--cor-coral);
+    font-size: 12px;
+}
+
 .principal__botao {
-    margin-bottom: 105px;
+    margin-bottom: 247px;
 }
 
 @media screen and (min-width: 768px) {
