@@ -78,6 +78,11 @@
     width: 24px;
 }
 
+.cabecalho__efeito:hover {
+    background-color: var(--cor-azul);
+    transition: 800ms;
+}
+
 @media screen and (min-width: 768px) {
     .cabecalho {
         height: 274px;

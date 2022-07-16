@@ -108,6 +108,12 @@
     width: 180px;
 }
 
+.botao:hover {
+    background-color: var(--cor-coral-fraca);
+    color: var(--cor-preta);
+    transition: 800ms;
+}
+
 .botao-menor {
     background-color: var(--cor-coral);
     border-radius: 6px;
@@ -123,6 +129,12 @@
     line-height: 24px;
 
     width: 148px;
+}
+
+.botao-menor:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-preta);
+    transition: 800ms;
 }
 
 /*AJUSTES RESPONSIVOS*/
