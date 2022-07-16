@@ -3,56 +3,41 @@
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-geral);
-    height: 659px;
-    justify-content: space-evenly;
+    height: 736px;
+    justify-content: space-between;
     min-width: 350px;
 }
 
 .principal__paragrafos {
-    align-items: center;
     color: var(--cor-azul);
-    display: flex;
-    flex-direction: column;
     font-family: var(--fonte-geral);
     font-weight: 400;
     font-size: 16px;
-    height: 71px;
+    height: 60px;
     line-height: 21px;
-    justify-content: space-between;
+    margin-bottom: 24px;
 
     text-align: center;
-    width: 312px;
-}
-
-.principal__logo {
-    background-image: url('../../../assets/logoAdopet.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 35px;
-    margin-bottom: 25px;
-    width: 143px;
+    width: 226px;
 }
 
 .principal__formulario {
     display: flex;
     flex-direction: column;
-
-    height: 336px;
-    padding: 24px;
+    /*Subtrai 72px das alturas do figma porque o botão ficou separado no meu estilo.*/
+    height: 564px;
+    padding: 32px 16px;
     width: 312px;
 }
 
 .principal__formulario--label {
-    color: var(--cor-cinza);
+    color: var(--cor-azul);
     font-family: var(--fonte-geral);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     height: 25px;
     line-height: 24px;
     margin-bottom: 4px;
-    text-align: center;
 }
 
 .principal__formulario--texto {
@@ -62,96 +47,104 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     color: var(--cor-cinza-claro);
     font-family: var(--fonte-geral);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
-    height: 40px;
+    height: 48px;
     line-height: 16px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 16px;
+    width: 280px;
 }
 
 .principal__formulario--texto:last-child {
+    height: 172px;
     margin-bottom: 0px;
 }
 
+.principal__formulario--texto:last-child::placeholder { 
+    transform:translateY(-220%);
+}
+
 .principal__botao {
-    margin-bottom: 105px;
+    margin-bottom: 48px;
 }
 
 @media screen and (min-width: 768px) {
-    .principal__logo {
-        height: 62px;
-        width: 252px;
-    }
-
     .principal {
-        height: 846px;
+        height: 811px;
+        margin-top: 11px;
     }
 
     .principal__paragrafos {
         font-size: 18px;
         height: 78px;
         line-height: 26px;
+        margin-bottom: 40px;
     
         text-align: center;
         width: 525px;
     }
 
     .principal__formulario {
-        height: 361px;
-        padding: 40px;
-        width: 344px;
+        height: 556px;
+        width: 524px;
     }
 
     .principal__formulario--label {
-        font-size: 18px;
-        font-weight: 400;
         height: 24px;
         line-height: 24px;
         margin-bottom: 8px;
     }
     
     .principal__formulario--texto {
-        font-size: 14px;
         font-weight: 400;
-        height: 40px;
+        height: 48px;
         line-height: 16px;
-        margin-bottom: 20px;
+        width: 492px;
+    }
+
+    .principal__botao {
+        margin-bottom: 123px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .principal__logo {
-        height: 64px;
-        width: 260px;
-    }
-
     .principal {
-        height: 814px;
+        height: 848px;
     }
 
     .principal__paragrafos {
-        padding-bottom: 16px;
+        margin-bottom: 37px;
         width: 552px;
     }
 
     .principal__formulario {
-        padding: 32px;
+        height: 551px;
+        padding: 27px 30px 0px 30px;
         width: 552px;
     }
 
     .principal__formulario--label {
-        font-size: 18px;
-        font-weight: 600;
         height: 25px;
         line-height: 24px;
     }
     
     .principal__formulario--texto {
-        font-size: 16px;
         font-weight: 400;
-        height: 40px;
         line-height: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
+    }
+
+    .principal__formulario--texto:last-child {
+        margin-bottom: 0;
+    }
+
+    .principal__botao {
+        margin-bottom: 68px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .principal {
+        margin-top: 144px;
     }
 }
