@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-geral);
-    height: 736px;
+    height: 925px;
     justify-content: space-between;
     min-width: 350px;
 }
@@ -13,20 +13,27 @@
     font-family: var(--fonte-geral);
     font-weight: 400;
     font-size: 16px;
-    height: 60px;
+    height: 140px;
     line-height: 21px;
-    margin-bottom: 24px;
 
     text-align: center;
-    width: 226px;
+    width: 247px;
+}
+
+.principal__paragrafos--perfil {
+    color: var(--cor-cinza);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 56px;
 }
 
 .principal__formulario {
     display: flex;
     flex-direction: column;
     /*Subtrai 72px das alturas do figma porque o botão ficou separado no meu estilo.*/
-    height: 564px;
-    padding: 32px 16px;
+    height: 697px;
+    padding: 16px 16px;
     width: 312px;
 }
 
@@ -37,7 +44,26 @@
     font-weight: 600;
     height: 25px;
     line-height: 24px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.principal__formulario--perfil {
+    align-self: center;
+    height: 80px;
+    
+    width: 80px;
+}
+
+.principal__formulario--instrucao {
+    align-self: center;
+    color: var(--cor-coral);
+    font-family: var(--fonte-geral);
+    font-weight: 400;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 5px 0;
+    width: 168px;
 }
 
 .principal__formulario--texto {
@@ -56,12 +82,9 @@
 }
 
 .principal__formulario--texto:last-child {
-    height: 172px;
-    margin-bottom: 0px;
-}
-
-.principal__formulario--texto:last-child::placeholder { 
-    transform:translateY(-220%);
+    height: 144px;
+    line-height: 24px;
+    padding: 16px;
 }
 
 .principal__botao {
@@ -70,29 +93,21 @@
 
 @media screen and (min-width: 768px) {
     .principal {
-        height: 811px;
+        height: 866px;
         margin-top: 11px;
     }
 
     .principal__paragrafos {
         font-size: 18px;
-        height: 78px;
+        height: 134px;
         line-height: 26px;
-        margin-bottom: 40px;
-    
-        text-align: center;
-        width: 525px;
-    }
-
-    .principal__formulario {
-        height: 556px;
+        margin-bottom: 0px;
         width: 524px;
     }
 
-    .principal__formulario--label {
-        height: 24px;
-        line-height: 24px;
-        margin-bottom: 8px;
+    .principal__formulario {
+        height: 700px;
+        width: 524px;
     }
     
     .principal__formulario--texto {
@@ -102,6 +117,11 @@
         width: 492px;
     }
 
+    .principal__formulario--texto:last-child {
+        height: 104px;
+        margin-bottom: 0px;
+    }
+
     .principal__botao {
         margin-bottom: 123px;
     }
@@ -109,12 +129,7 @@
 
 @media screen and (min-width: 1024px) {
     .principal {
-        height: 848px;
-    }
-
-    .principal__paragrafos {
-        margin-bottom: 37px;
-        width: 552px;
+        height: 872px;
     }
 
     .principal__formulario {

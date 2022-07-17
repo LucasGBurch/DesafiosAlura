@@ -37,7 +37,7 @@
     font-weight: 600;
     height: 25px;
     line-height: 24px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .principal__formulario--texto {
@@ -87,12 +87,6 @@
     .principal__formulario {
         height: 556px;
         width: 524px;
-    }
-
-    .principal__formulario--label {
-        height: 24px;
-        line-height: 24px;
-        margin-bottom: 8px;
     }
     
     .principal__formulario--texto {
