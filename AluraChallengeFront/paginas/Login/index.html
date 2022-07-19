@@ -52,13 +52,16 @@
       <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required>
 
       <label for="" class="principal__formulario--label">Senha</label>
-      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha" required>
+      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha" minlength="6"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
+        data-tipo="senha" required>
 
       <a href="" class="principal__esquece-senha"><span>Esqueci minha senha.</span></a>
 
-    </form>
+      <button class="principal__botao botao-menor">Entrar</button>
 
-    <button class="principal__botao botao-menor" type="submit">Entrar</button>
+    </form>
 
   </main>
 

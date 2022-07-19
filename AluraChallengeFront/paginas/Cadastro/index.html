@@ -60,14 +60,20 @@
       <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo" required>
 
       <label for="" class="principal__formulario--label">Senha</label>
-      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha" required>
+      <input type="password" class="principal__formulario--texto" placeholder="Crie uma senha" minlength="6"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
+        data-tipo="senha" required>
 
       <label for="" class="principal__formulario--label">Confirma sua senha</label>
-      <input type="password" class="principal__formulario--texto" placeholder="Repita a senha criada acima" required>
+      <input type="password" class="principal__formulario--texto" placeholder="Repita a senha criada acima"
+        minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+        title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
+        data-tipo="senha" required>
 
+      <button class="principal__botao botao-menor">Cadastrar</button>
     </form>
 
-    <button class="principal__botao botao-menor" type="submit">Cadastrar</button>
 
   </main>
 
