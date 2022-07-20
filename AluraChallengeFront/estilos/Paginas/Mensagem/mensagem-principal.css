@@ -14,7 +14,6 @@
     font-size: 16px;
     height: 60px;
     line-height: 21px;
-    margin-bottom: 24px;
 
     text-align: center;
     width: 226px;
@@ -25,8 +24,8 @@
     background-color: var(--cor-cinza-claro-fundos);
     display: flex;
     flex-direction: column;
-    height: 636px;
-    margin-top: 24px 24px 24px 16px;
+    height: 676px;
+    margin: 24px 24px 16px 24px;
     padding: 32px 16px;
     width: 312px;
 }
@@ -76,55 +75,57 @@
     transform:translateY(-280%);
 }
 
-.principal__formulario--botao {
-}
-
 @media screen and (min-width: 768px) {
     .principal {
-        height: 811px;
+        height: 822px;
         margin-top: 11px;
     }
 
     .principal__paragrafos {
         font-size: 18px;
-        height: 78px;
+        height: 52px;
         line-height: 26px;
-        margin-bottom: 40px;
     
         text-align: center;
         width: 525px;
     }
 
     .principal__formulario {
-        height: 556px;
+        height: 759px;
+        margin: 40px 24px 0px 16px;
+        padding-bottom: 0;
         width: 524px;
+    }
+
+    .principal__formulario--label:last-child {
+        margin-bottom: 8px;
     }
     
     .principal__formulario--texto {
         font-weight: 400;
-        height: 48px;
+        height: 24px;
         line-height: 16px;
-        width: 492px;
+        width: 460px;
     }
 
-    .principal__botao {
-        margin-bottom: 123px;
+    .principal__formulario--texto:last-child {
+        height: 148px;
+        margin-bottom: 32px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .principal {
-        height: 848px;
+        height: 836px;
     }
 
     .principal__paragrafos {
-        margin-bottom: 37px;
-        width: 552px;
+        width: 492px;
     }
 
     .principal__formulario {
-        height: 551px;
-        padding: 27px 30px 0px 30px;
+        height: 696px;
+        padding: 27px 30px 32px 30px;
         width: 552px;
     }
 
@@ -139,10 +140,6 @@
         margin-bottom: 16px;
     }
 
-    .principal__formulario--texto:last-child {
-        margin-bottom: 0;
-    }
-
     .principal__botao {
         margin-bottom: 68px;
     }
@@ -150,6 +147,7 @@
 
 @media screen and (min-width: 1350px) {
     .principal {
-        margin-top: 144px;
+        height: 850px;
+        padding-top: 66px;
     }
 }

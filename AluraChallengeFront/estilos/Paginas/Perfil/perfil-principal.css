@@ -4,7 +4,6 @@
     flex-direction: column;
     font-family: var(--fonte-geral);
     height: 925px;
-    justify-content: space-between;
     min-width: 350px;
 }
 
@@ -13,7 +12,7 @@
     font-family: var(--fonte-geral);
     font-weight: 400;
     font-size: 16px;
-    height: 140px;
+    height: 60px;
     line-height: 21px;
 
     text-align: center;
@@ -21,13 +20,20 @@
 }
 
 .principal__formulario {
+    align-items: center;
     background-color: var(--cor-cinza-claro-fundos);
     display: flex;
     flex-direction: column;
     /*Subtrai 72px das alturas do figma porque o botão ficou separado no meu estilo.*/
     height: 697px;
-    padding: 16px 16px;
+    margin: 24px 24px 16px 24px;
+    padding: 32px 16px;
     width: 312px;
+}
+
+.principal__formulario--campos {
+    display: flex;
+    flex-direction: column;
 }
 
 .principal__formulario--perfil {
@@ -50,7 +56,6 @@
 .principal__formulario--perfil {
     align-self: center;
     height: 80px;
-    
     width: 80px;
 }
 
@@ -85,10 +90,6 @@
     height: 144px;
     line-height: 24px;
     padding: 16px;
-}
-
-.principal__botao {
-    margin-bottom: 48px;
 }
 
 @media screen and (min-width: 768px) {

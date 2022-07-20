@@ -137,6 +137,10 @@
     .cabecalho {
         height: 130px;
     }
+
+    .cabecalho-sem-logo {
+        height: 196px;
+    }
     
     .cabecalho__navegacao {
         margin-top: 64px;
