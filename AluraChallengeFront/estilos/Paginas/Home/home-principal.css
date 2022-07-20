@@ -29,6 +29,7 @@
 }
 
 .principal__imagem {
+    background-color: var(--cor-cinza-claro-fundos);
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 48% 52%;

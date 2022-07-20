@@ -4,7 +4,6 @@
     flex-direction: column;
     font-family: var(--fonte-geral);
     height: 659px;
-    justify-content: space-evenly;
     min-width: 350px;
 }
 
@@ -18,7 +17,7 @@
     font-size: 16px;
     height: 71px;
     line-height: 21px;
-    justify-content: space-between;
+    justify-content: space-around;
 
     text-align: center;
     width: 312px;
@@ -36,12 +35,23 @@
 }
 
 .principal__formulario {
+    align-items: center;
     display: flex;
     flex-direction: column;
 
-    height: 336px;
-    padding: 24px;
+    height: 424px;
+    margin-top: 24px;
+    padding: 0 24px;
     width: 312px;
+}
+
+.principal__formulario--campos {
+    align-items: center;
+}
+
+.principal__formulario--campos {
+    display: flex;
+    flex-direction: column;
 }
 
 .principal__formulario--label {
@@ -68,14 +78,15 @@
     line-height: 16px;
     margin-bottom: 20px;
     text-align: center;
+    width: 312px;
 }
 
 .principal__formulario--texto:last-child {
     margin-bottom: 0px;
 }
 
-.principal__botao {
-    margin-bottom: 105px;
+.principal__formulario--botao {
+    margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -97,9 +108,13 @@
         width: 525px;
     }
 
+    .principal__logo {
+        margin-bottom: 40px;
+    }
+
     .principal__formulario {
-        height: 361px;
-        padding: 40px;
+        height: 481px;
+        padding: 0 40px;
         width: 344px;
     }
 
@@ -116,7 +131,12 @@
         font-weight: 400;
         height: 40px;
         line-height: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
+        width: 344px;
+    }
+
+    .principal__formulario--botao {
+        margin-top: 40px;
     }
 }
 
@@ -136,7 +156,7 @@
     }
 
     .principal__formulario {
-        padding: 32px;
+        margin-top: 40px;
         width: 552px;
     }
 
@@ -153,5 +173,14 @@
         height: 40px;
         line-height: 16px;
         margin-bottom: 20px;
+        width: 552px;
+    }
+
+    .senhas {
+        width: 362px;
+    }
+
+    .principal__formulario--botao {
+        margin-top: 32px;
     }
 }
