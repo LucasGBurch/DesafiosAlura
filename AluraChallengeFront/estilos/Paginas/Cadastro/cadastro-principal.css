@@ -47,9 +47,6 @@
 
 .principal__formulario--campos {
     align-items: center;
-}
-
-.principal__formulario--campos {
     display: flex;
     flex-direction: column;
 }

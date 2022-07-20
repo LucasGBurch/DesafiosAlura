@@ -48,22 +48,24 @@
 
     <form class="principal__formulario">
 
-      <label for="" class="principal__formulario--label">Nome</label>
-      <input type="email" class="principal__formulario--texto" placeholder="Insira seu nome completo" required>
+      <fieldset class="principal__formulario--campos">
+        <label for="" class="principal__formulario--label">Nome</label>
+        <input type="text" class="principal__formulario--texto" placeholder="Insira seu nome completo" required>
+        <label for="" class="principal__formulario--label">Telefone</label>
+        <input type="tel" class="principal__formulario--texto" placeholder="Insira seu telefone e/ou whatsapp"
+          pattern="(\(?\d{2}\)?\s)(\d{4,5}\-\d{4})"
+          title="Formatos aceitos para telefone: (16) 91231-6165 - (16) 3231-6165 - 16 91231-6165 - 16 3231-6165"
+          required>
+        <label for="" class="principal__formulario--label">Nome do animal</label>
+        <input type="text" class="principal__formulario--texto" placeholder="Por qual animal você se interessou?"
+          required>
+        <label for="" class="principal__formulario--label">Mensagem</label>
+        <input type="text" class="principal__formulario--texto" placeholder="Escreva sua mensagem." required>
+      </fieldset>
 
-      <label for="" class="principal__formulario--label">Telefone</label>
-      <input type="text" class="principal__formulario--texto" placeholder="Insira seu telefone e/ou whatsapp" required>
+      <button class="principal__formulario--botao botao-menor" type="submit">Enviar</button>
 
-      <label for="" class="principal__formulario--label">Nome do animal</label>
-      <input type="text" class="principal__formulario--texto" placeholder="Por qual animal você se interessou?" required>
-
-      <label for="" class="principal__formulario--label">Mensagem</label>
-      <input type="text" class="principal__formulario--texto" placeholder="Escreva sua mensagem." required>
-      
-      
     </form>
-    
-    <div><button class="principal__botao botao-menor" type="submit">Enviar</button></div>
 
   </main>
 
