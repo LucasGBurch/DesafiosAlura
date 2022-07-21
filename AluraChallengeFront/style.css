@@ -18,7 +18,8 @@
 
 /*CONFIGURAÇÕES GERAIS DE BG DO BODY:*/
 
-.forma2 {
+.body-inicial {
+    background-color: var(--cor-azul);
     background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
     background-position: top left, center right;
     background-repeat: no-repeat, no-repeat;
@@ -37,7 +38,7 @@
     height: 917px;
 }
 
-.pata {
+.body-cadastro-login {
     background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2-1.png');
     background-position: top right, top left, center left;
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@
 
 }
 
-.usuario {
+.body-home {
     background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png');
     background-position: top right, top left;
     background-repeat: no-repeat;
@@ -61,7 +62,7 @@
     height: 917px;
 }
 
-.usuario2 {
+.body-mensagem {
     background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png');
     background-position: top right, top left;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@
     height: 917px;
 }
 
-.perfil {
+.body-perfil {
     background-image: url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma1.png');
     background-position: top left, top right;
     background-repeat: no-repeat, no-repeat;
@@ -83,10 +84,6 @@
     background-position-x: calc(100% - 29px), left;
 
     height: 917px;
-}
-
-.body-primeiro {
-    background-color: var(--cor-azul);
 }
 
 /*BOTÕES*/
@@ -162,13 +159,14 @@
         width: 164px;
     }
 
-    .forma2 {
+    .body-inicial {
+        background-color: var(--cor-azul);
         background-size: 561px 470px, 134.5px 664px;
 
         height: 1200px;
     }
 
-    .pata {
+    .body-cadastro-login {
         background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
         background-position: top right, top left, center right;
         background-repeat: no-repeat;
@@ -179,7 +177,7 @@
         height: 1200px;
     }
 
-    .perfil {
+    .body-perfil {
         background-image: url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
         background-size: 48px 48px, 561px 470px, 134px 664px;
 
@@ -189,7 +187,7 @@
         height: 1255px;
     }
 
-    .usuario {
+    .body-home {
         background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
         background-size: 48px 48px, 561px 470px, 0px 0px;
 
@@ -199,7 +197,7 @@
         height: 1200px;
     }
 
-    .usuario2 {
+    .body-mensagem {
         background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
         background-size: 48px 48px, 561px 470px, 134px 664px;
 
@@ -219,16 +217,17 @@
         width: 174px;
     }
 
-    .forma2 {
+    .body-inicial {
+        background-color: var(--cor-azul);
         height: 1025px;
     }
 
-    .pata {
+    .body-cadastro-login {
         height: 1025px;
         background-position-y: top, top, 180px;
     }
 
-    .perfil {
+    .body-perfil {
         background-size: 64px 64px, 561px 470px, 134px 664px;
 
         background-position-y: 46px, top, center;
@@ -238,7 +237,7 @@
         height: 1148px;
     }
 
-    .usuario {
+    .body-home {
         background-size: 56px 56px, 561px 470px, 134px 664px;
 
         background-position-y: 46px, top, center;
