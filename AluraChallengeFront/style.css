@@ -28,16 +28,6 @@
     height: 917px;
 }
 
-.forma2-1 {
-    background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2-1.png');
-    background-position: top left, center left;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain;
-    background-size: 352px 295px, 84px 415px;
-
-    height: 917px;
-}
-
 .body-cadastro-login {
     background-image: url('./assets/img/patas.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2-1.png');
     background-position: top right, top left, center left;
@@ -88,7 +78,7 @@
 
 /*BOTÕES*/
 
-.botao {
+.botao-pag-inicial {
     background-color: var(--cor-coral);
     border-radius: 6px;
     color: var(--cor-branca);
@@ -105,13 +95,13 @@
     width: 180px;
 }
 
-.botao:hover {
+.botao-pag-inicial:hover {
     background-color: var(--cor-coral-fraca);
     color: var(--cor-preta);
     transition: 800ms;
 }
 
-.botao-menor {
+.botao-de-forms {
     background-color: var(--cor-coral);
     border-radius: 6px;
     color: var(--cor-branca);
@@ -128,7 +118,7 @@
     width: 148px;
 }
 
-.botao-menor:hover {
+.botao-de-forms:hover {
     background-color: var(--cor-azul);
     color: var(--cor-preta);
     transition: 800ms;
@@ -138,7 +128,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .botao {
+    .botao-pag-inicial {
         background-color: var(--cor-coral);
         border-radius: 6px;
         color: var(--cor-branca);
@@ -154,7 +144,7 @@
         width: 344px;
     }
 
-    .botao-menor {
+    .botao-de-forms {
         font-size: 18px;
         width: 164px;
     }
@@ -209,11 +199,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .botao {
+    .botao-pag-inicial {
         width: 362px;
     }
 
-    .botao-menor {
+    .botao-de-forms {
         width: 174px;
     }
 
