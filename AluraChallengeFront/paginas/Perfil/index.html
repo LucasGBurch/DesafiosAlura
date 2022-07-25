@@ -54,14 +54,14 @@
 
       <fieldset class="principal__formulario--campos">
         <label for="" class="principal__formulario--label">Foto</label>
-        <img src="../../assets/img/fotoperfil.png" alt="Foto de Perfil de uma pessoa" class="principal__formulario--perfil">
+        <img src="../../assets/img/fotoperfil.png" alt="Foto de Perfil de uma pessoa" class="principal__formulario--perfil" data-tipo="imagem">
         <span class="principal__formulario--instrucao">Clique na foto para editar</span>
         <label for="" class="principal__formulario--label">Nome</label>
-        <input type="email" class="principal__formulario--texto" placeholder="Joana Magalhães" required>
+        <input type="text" class="principal__formulario--texto" placeholder="Joana Magalhães" required data-tipo="texto">
         <label for="" class="principal__formulario--label">Telefone</label>
-        <input type="text" class="principal__formulario--texto" placeholder="55 11 XXXXXXXXX" required>
+        <input type="tel" class="principal__formulario--texto" placeholder="55 11 XXXXXXXXX" required data-tipo="telefone">
         <label for="" class="principal__formulario--label">Cidade</label>
-        <input type="text" class="principal__formulario--texto" placeholder="São Paulo" required>
+        <input type="text" class="principal__formulario--texto" placeholder="São Paulo" required data-tipo="texto">
         <label for="" class="principal__formulario--label">Mensagem</label>
         <textarea name="" id="" cols="30" rows="15" class="principal__formulario--texto" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
       </fieldset>
@@ -75,6 +75,8 @@
   <footer class="rodape">
     <span>2022 - Desenvolvido por Alura.</span>
   </footer>
+
+  <script src="../../js/app.js" type="module"></script>
 </body>
 
 </html>

@@ -1,3 +1,24 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-container--invalido {
+    color: var(--cor-aviso);
+    margin-bottom: 0.5rem;
+}
+
+.input-mensagem-erro {
+    display: none;
+    font-size: 12px;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-aviso);
+    display: block;
+}
+
 .principal {
     align-items: center;
     display: flex;
@@ -40,7 +61,7 @@
     flex-direction: column;
 
     margin-top: 42px;
-    height: 300px;
+    height: 400px;
     padding: 0 24px;
     width: 312px;
 }
@@ -112,7 +133,7 @@
     }
 
     .principal__formulario {
-        height: 289px;
+        height: 389px;
         margin-top: 40px;
         width: 344px;
     }

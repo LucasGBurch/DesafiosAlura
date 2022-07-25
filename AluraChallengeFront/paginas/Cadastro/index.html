@@ -13,9 +13,6 @@
   <!--Inclui reset-->
   <link rel="stylesheet" href="../../estilos/Cabecalho/cabecalho.css">
   <link rel="stylesheet" href="../../estilos/Paginas/Cadastro/cadastro-principal.css">
-
-
-  <link rel="stylesheet" href="../../estilos/Adicionais/pata.css">
   <link rel="stylesheet" href="../../estilos/Rodape/rodape.css">
 </head>
 
@@ -56,35 +53,52 @@
     <form class="principal__formulario">
 
       <fieldset class="principal__formulario--campos">
-        <label for="" class="principal__formulario--label">Email</label>
-        <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required>
 
-        <label for="" class="principal__formulario--label">Nome</label>
-        <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo" required>
+        <div class="input-container">
+          <label for="" class="principal__formulario--label">Email</label>
+          <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required
+            data-tipo="email">
+          <span class="input-mensagem-erro">Este campo está inválido!</span>
+        </div>
 
-        <label for="" class="principal__formulario--label">Senha</label>
-        <input type="password" class="principal__formulario--texto senhas" placeholder="Crie uma senha" minlength="6"
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-          title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
-          data-tipo="senha" required>
+        <div class="input-container">
+          <label for="" class="principal__formulario--label">Nome</label>
+          <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo" required
+            data-tipo="nome">
+          <span class="input-mensagem-erro">Este campo está inválido!</span>
+        </div>
 
-        <label for="" class="principal__formulario--label">Confirma sua senha</label>
-        <input type="password" class="principal__formulario--texto senhas" placeholder="Repita a senha criada acima"
-          minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-          title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
-          data-tipo="senha" required>
-          
+        <div class="input-container">
+          <label for="" class="principal__formulario--label">Senha</label>
+          <input type="password" class="principal__formulario--texto senhas" placeholder="Crie uma senha" minlength="6"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+            title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
+            required data-tipo="senha">
+          <span class="input-mensagem-erro">Este campo está inválido!</span>
+        </div>
+
+        <div class="input-container">
+          <label for="" class="principal__formulario--label">Confirma sua senha</label>
+          <input type="password" class="principal__formulario--texto senhas" placeholder="Repita a senha criada acima"
+            minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+            title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
+            required data-tipo="senha"
+            data-tipo="senha">
+          <span class="input-mensagem-erro">Este campo está inválido!</span>
+        </div>
+
       </fieldset>
 
       <button class="principal__formulario--botao botao-de-forms">Cadastrar</button>
     </form>
-
 
   </main>
 
   <footer class="rodape">
     <span>2022 - Desenvolvido por Alura.</span>
   </footer>
+
+  <script src="../../js/app.js" type="module"></script>
 </body>
 
 </html>

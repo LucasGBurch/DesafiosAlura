@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;500;600&display=swap');
 
 :root {
+    --cor-aviso: #ff0000;
     --cor-azul: #3772FF;
     --cor-azul-esverdeado: #36D6AD;
     --cor-branca: #FFFFFF;

@@ -1,9 +1,31 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-container--invalido {
+    align-items: center;
+    color: var(--cor-aviso);
+    margin-bottom: 0.25rem;
+}
+
+.input-mensagem-erro {
+    display: none;
+    font-size: 12px;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-aviso);
+    display: block;
+}
+
 .principal {
     align-items: center;
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-geral);
-    height: 659px;
+    height: 759px;
     min-width: 350px;
 }
 
@@ -39,7 +61,7 @@
     display: flex;
     flex-direction: column;
 
-    height: 424px;
+    height: 554px;
     margin-top: 24px;
     padding: 0 24px;
     width: 312px;
@@ -83,7 +105,7 @@
 }
 
 .principal__formulario--botao {
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,7 +115,7 @@
     }
 
     .principal {
-        height: 846px;
+        height: 900px;
     }
 
     .principal__paragrafos {
@@ -110,7 +132,7 @@
     }
 
     .principal__formulario {
-        height: 481px;
+        height: 581px;
         padding: 0 40px;
         width: 344px;
     }
@@ -133,7 +155,7 @@
     }
 
     .principal__formulario--botao {
-        margin-top: 40px;
+        margin-top: 24px;
     }
 }
 
@@ -144,7 +166,7 @@
     }
 
     .principal {
-        height: 814px;
+        height: 854px;
     }
 
     .principal__paragrafos {
