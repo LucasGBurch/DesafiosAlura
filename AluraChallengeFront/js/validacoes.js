@@ -22,6 +22,7 @@ let validConfirmSenha = false;
 
 
 // Eventos para validação:
+// nome:
 nome.addEventListener('keyup', () => {
   if (nome.value.length <= 2) {
     labelNome.setAttribute('style', 'color: red');
@@ -34,6 +35,23 @@ nome.addEventListener('keyup', () => {
   };
 });
 
+// email:
+email.addEventListener('keyup', () => {
+  if (!validarEmail(email.value)) {
+    labelEmail.setAttribute('style', 'color: red');
+    labelEmail.innerHTML = 'Email *Modelo: nome@texto.com';
+    validEmail = false;
+    console.log(validEmail)
+  } else {
+    labelEmail.setAttribute('style', 'color: green');
+    labelEmail.innerHTML = 'Email';
+    validEmail = true;
+    console.log(validEmail)
+  };
+});
+
+
+// senha:
 senha.addEventListener('keyup', () => {
   if (senha.value.length <= 5) {
     labelSenha.setAttribute('style', 'color: red');
@@ -46,6 +64,7 @@ senha.addEventListener('keyup', () => {
   };
 });
 
+//confirme senha:
 confirmSenha.addEventListener('keyup', () => {
   if (senha.value != confirmSenha.value) {
     labelConfirmSenha.setAttribute('style', 'color: red');
@@ -58,10 +77,18 @@ confirmSenha.addEventListener('keyup', () => {
   };
 });
 
+// Função para validar o email:
+function validarEmail(email) {
+  var regex = /\S+@\S+\.\S+/;
+  return regex.test(email);
+};
+
 
 // Função para cadastrar os dados:
-function cadastrar() {
-  
+function cadastrar() { // ou add array existente, ou cria um novo/vazio
+  if (validNome && validSenha && validConfirmSenha) {
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
+  }
 }
 
 
