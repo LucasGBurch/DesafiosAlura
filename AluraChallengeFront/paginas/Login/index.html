@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--Olhinho de senha-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="shortcut icon" href="/AluraChallengeFront/assets/favicon-16x16.png">
   <title>Adopet - Login</title>
 
@@ -60,10 +63,11 @@
 
         <div class="input-container">
           <label for="" class="principal__formulario--label">Senha</label>
-          <input type="password" class="principal__formulario--texto senhas" placeholder="Crie uma senha" minlength="6"
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+          <input type="password" id="senha" class="principal__formulario--texto senhas" placeholder="Crie uma senha"
+            minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
             title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
             data-tipo="senha" required>
+          <i class="fa fa-eye" aria-hidden="true"></i>
           <span class="input-mensagem-erro">Este campo está inválido!</span>
         </div>
 
@@ -81,7 +85,7 @@
     <span>2022 - Desenvolvido por Alura.</span>
   </footer>
 
-  <script src="../../js/app.js" type="module"></script>
+  <script src="../../js/validacoes.js" type="module"></script>
 </body>
 
 </html>

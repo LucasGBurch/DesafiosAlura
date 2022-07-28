@@ -1,50 +1,90 @@
-export function valida(input) {
+// Selecionando campos do formulário (uma ideia para refatorar depois, com tempo, seria aproveitar os spans de campo inválido que resolvi abandonar depois de não conseguir aplicar a confirmação de senha com os objetos do curso de validação da Alura)
 
-  const tipoDeInput = input.dataset.tipo;
+let btn = document.querySelector('#verSenha');
+let btnConfirm = document.querySelector('#verConfirmeSenha');
 
-  if (input.validity.valid) { // se o valid for true ele tira o campo inválido
-    input.parentElement.classList.remove('input-container--invalido');
-    input.parentElement.querySelector('.input-mensagem-erro').innerHTML = '';
+let nome = document.querySelector('#nome');
+let labelNome = document.querySelector('#label-nome');
+let validNome = false;
+
+// Faltou a do e-mail; precisaria de uma expressão regular ainda para fazer seu evento.
+let email = document.querySelector('#email');
+let labelEmail = document.querySelector('#label-email');
+let validEmail = false;
+
+let senha = document.querySelector('#senha');
+let labelSenha = document.querySelector('#label-senha');
+let validSenha = false;
+
+let confirmSenha = document.querySelector('#confirm-senha');
+let labelConfirmSenha = document.querySelector('#label-confirm-senha');
+let validConfirmSenha = false;
+
+
+// Eventos para validação:
+nome.addEventListener('keyup', () => {
+  if (nome.value.length <= 2) {
+    labelNome.setAttribute('style', 'color: red');
+    labelNome.innerHTML = 'Nome *Deve ter 3 caracteres ou mais';
+    validNome = false;
   } else {
-    input.parentElement.classList.add('input-container--invalido');
-    input.parentElement.querySelector('.input-mensagem-erro').innerHTML = mostraMensagemDeErro(tipoDeInput, input);
-  }
+    labelNome.setAttribute('style', 'color: green');
+    labelNome.innerHTML = 'Nome';
+    validNome = true;
+  };
+});
 
-};
+senha.addEventListener('keyup', () => {
+  if (senha.value.length <= 5) {
+    labelSenha.setAttribute('style', 'color: red');
+    labelSenha.innerHTML = 'Senha *Insira de 6 a 12 caracteres';
+    validSenha = false;
+  } else {
+    labelSenha.setAttribute('style', 'color: green');
+    labelSenha.innerHTML = 'Senha';
+    validSenha = true;
+  };
+});
 
-const tiposDeErro = [
-  'valueMissing',
-  'typeMismatch',
-  'patternMismatch'
-]
+confirmSenha.addEventListener('keyup', () => {
+  if (senha.value != confirmSenha.value) {
+    labelConfirmSenha.setAttribute('style', 'color: red');
+    labelConfirmSenha.innerHTML = 'Confirme sua senha *Igual à senha';
+    validConfirmSenha = false;
+  } else {
+    labelConfirmSenha.setAttribute('style', 'color: green');
+    labelConfirmSenha.innerHTML = 'Confirme sua senha';
+    validConfirmSenha = true;
+  };
+});
 
-const mensagensDeErro = {
-  nome: {
-    valueMissing: 'O campo nome não pode estar vazio.'
-  },
-  email: {
-    valueMissing: 'O campo de email não pode estar vazio.',
-    typeMismatch: 'O email digitado não é válido.'
-  },
-  senha: {
-    valueMissing: 'O campo de senha não pode estar vazio.',
-    patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos'
-  },
-  telefone: {
-    valueMissing: 'O campo de telefone não pode estar vazio.',
-    patternMismatch: 'Formatos aceitos para telefone: (16) 91231-6165 - (16) 3231-6165 - 16 91231-6165 - 16 3231-6165'
-  },
+
+// Função para cadastrar os dados:
+function cadastrar() {
+  
 }
 
 
-function mostraMensagemDeErro(tipoDeInput, input) {
-  let mensagem = '';
-  tiposDeErro.forEach(erro => {
-    if(input.validity[erro]) {
-      mensagem = mensagensDeErro[tipoDeInput][erro]
-    };
-  });
+// Eventos do botão de olhinho. (ideia para refatorar este seria descobrir como posicionar o olho sempre à direita do input, pois ele sempre sai do lugar com position absolute)
+btn.addEventListener('click', () => {
+  let inputSenha = document.querySelector('#senha');
 
-  return mensagem;
-}
+  if (inputSenha.getAttribute('type') == 'password') {
+    inputSenha.setAttribute('type', 'text');
+  } else {
+    inputSenha.setAttribute('type', 'password');
+  };
+});
+
+btnConfirm.addEventListener('click', () => {
+  let inputConfirmSenha = document.querySelector('#confirm-senha');
+
+  if (inputConfirmSenha.getAttribute('type') == 'password') {
+    inputConfirmSenha.setAttribute('type', 'text');
+  } else {
+    inputConfirmSenha.setAttribute('type', 'password');
+  };
+});
+
+
 

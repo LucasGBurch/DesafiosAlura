@@ -1,3 +1,9 @@
+.fa-eye {
+    color: var(--cor-cinza);
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;

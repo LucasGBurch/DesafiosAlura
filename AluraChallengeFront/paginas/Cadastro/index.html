@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--Olhinho de senha-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="shortcut icon" href="/AluraChallengeFront/assets/favicon-16x16.png">
   <title>Adopet - Cadastro</title>
 
@@ -55,41 +58,40 @@
       <fieldset class="principal__formulario--campos">
 
         <div class="input-container">
-          <label for="" class="principal__formulario--label">Email</label>
-          <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required
+          <label for="" id="label-email" class="principal__formulario--label">Email</label>
+          <input type="email" id="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required
             data-tipo="email">
           <span class="input-mensagem-erro">Este campo está inválido!</span>
         </div>
 
         <div class="input-container">
-          <label for="" class="principal__formulario--label">Nome</label>
-          <input type="text" class="principal__formulario--texto" placeholder="Digite seu nome completo" required
-            data-tipo="nome">
+          <label for="" id="label-nome" class="principal__formulario--label">Nome</label>
+          <input type="text" id="nome" class="principal__formulario--texto" placeholder="Digite seu nome completo" minlength="3"
+            required data-tipo="nome">
           <span class="input-mensagem-erro">Este campo está inválido!</span>
         </div>
 
         <div class="input-container">
-          <label for="" class="principal__formulario--label">Senha</label>
-          <input type="password" class="principal__formulario--texto senhas" placeholder="Crie uma senha" minlength="6"
+          <label for="" id="label-senha" class="principal__formulario--label">Senha</label>
+          <input type="password" id="senha" class="principal__formulario--texto senhas" placeholder="Crie uma senha" minlength="6"
             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
             title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
-            required data-tipo="senha">
+            required data-senha="" data-tipo="senha">
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
           <span class="input-mensagem-erro">Este campo está inválido!</span>
         </div>
 
         <div class="input-container">
-          <label for="" class="principal__formulario--label">Confirma sua senha</label>
-          <input type="password" class="principal__formulario--texto senhas" placeholder="Repita a senha criada acima"
-            minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-            title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
-            required data-tipo="senha"
-            data-tipo="senha">
+          <label for="" id="label-confirm-senha" class="principal__formulario--label">Confirme sua senha</label>
+          <input type="password" id="confirm-senha" class="principal__formulario--texto senhas" placeholder="Repita a senha criada acima"
+            required data-confirma="" data-tipo="senhaConfirma">
+          <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
           <span class="input-mensagem-erro">Este campo está inválido!</span>
         </div>
 
       </fieldset>
 
-      <button class="principal__formulario--botao botao-de-forms">Cadastrar</button>
+      <button class="principal__formulario--botao botao-de-forms" id="botao-cadastro">Cadastrar</button>
     </form>
 
   </main>
@@ -98,7 +100,7 @@
     <span>2022 - Desenvolvido por Alura.</span>
   </footer>
 
-  <script src="../../js/app.js" type="module"></script>
+  <script src="../../js/validacoes.js" type="module"></script>
 </body>
 
 </html>
