@@ -1,3 +1,11 @@
+#erro-senha {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
 .fa-eye {
     color: var(--cor-cinza);
     cursor: pointer;
@@ -5,25 +13,38 @@
 }
 
 .input-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 24px;
     text-align: center;
 }
 
-.input-container--invalido {
-    align-items: center;
-    color: var(--cor-aviso);
-    margin-bottom: 0.25rem;
-}
-
-.input-mensagem-erro {
-    display: none;
-    font-size: 12px;
+.input-container:nth-last-child(-n+2) {
+    margin-bottom: 0; /*Da terceira em diante 0*/
 }
 
 .input-container--invalido .input-mensagem-erro {
     color: var(--cor-aviso);
     display: block;
+}
+
+#msg-erro {
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    text-align: center;
+}
+
+#msg-sucesso {
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    text-align: center;
 }
 
 .principal {
@@ -110,10 +131,6 @@
     margin-bottom: 0px;
 }
 
-.principal__formulario--botao {
-    margin-top: 16px;
-}
-
 @media screen and (min-width: 768px) {
     .principal__logo {
         height: 62px;
@@ -161,7 +178,7 @@
     }
 
     .principal__formulario--botao {
-        margin-top: 24px;
+        margin-top: 16px;
     }
 }
 
@@ -206,6 +223,6 @@
     }
 
     .principal__formulario--botao {
-        margin-top: 32px;
+        margin-top: 24px;
     }
 }
