@@ -29,7 +29,7 @@
         </button>
       </a>
 
-      <a href="../Home/index.html">
+      <a href="../Inicial/index.html">
         <button class="cabecalho__navegacao--home cabecalho__efeito">
         </button>
       </a>
@@ -51,31 +51,30 @@
 
     <form class="principal__formulario">
 
+      <div id="msg-erro"></div>
+      <div id="msg-sucesso"></div>
+
       <fieldset class="principal__formulario--campos">
 
         <div class="input-container">
-          <label for="" class="principal__formulario--label">Email</label>
-          <input type="email" class="principal__formulario--texto" placeholder="Escolha seu melhor email" required
-            data-tipo="email">
-          <span class="input-mensagem-erro">Este campo está inválido!</span>
+          <label for="" id="email-label" class="principal__formulario--label">Email</label>
+          <input type="email" class="principal__formulario--texto" id="email" placeholder="Escolha seu melhor email"
+            required data-tipo="email">
         </div>
 
 
         <div class="input-container">
-          <label for="" class="principal__formulario--label">Senha</label>
-          <input type="password" id="senha" class="principal__formulario--texto senhas" placeholder="Crie uma senha"
-            minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-            title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos"
-            data-tipo="senha" required>
+          <label for="" id="senha-label" class="principal__formulario--label">Senha</label>
+          <input type="password" id="senha" class="principal__formulario--texto senhas" id="senha"
+            placeholder="Crie uma senha" data-tipo="senha" required>
           <i class="fa fa-eye" aria-hidden="true"></i>
-          <span class="input-mensagem-erro">Este campo está inválido!</span>
         </div>
 
       </fieldset>
 
       <a href="" class="principal__esquece-senha"><span>Esqueci minha senha.</span></a>
 
-      <button class="principal__formulario--botao botao-de-forms">Entrar</button>
+      <button class="principal__formulario--botao botao-de-forms" id="entrar">Entrar</button>
 
     </form>
 
@@ -85,7 +84,7 @@
     <span>2022 - Desenvolvido por Alura.</span>
   </footer>
 
-  <script src="../../js/validacoes.js" type="module"></script>
+  <script src="../../js/autentica-login.js" type="module"></script>
 </body>
 
 </html>

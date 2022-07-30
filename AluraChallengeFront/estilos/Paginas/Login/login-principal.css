@@ -1,27 +1,33 @@
 .fa-eye {
     color: var(--cor-cinza);
     cursor: pointer;
+    padding-bottom: 1rem;
 }
 
 .input-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 24px;
     text-align: center;
 }
 
-.input-container--invalido {
-    color: var(--cor-aviso);
-    margin-bottom: 0.5rem;
-}
-
-.input-mensagem-erro {
+#msg-erro {
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
     display: none;
-    font-size: 12px;
+    text-align: center;
 }
 
-.input-container--invalido .input-mensagem-erro {
-    color: var(--cor-aviso);
-    display: block;
+#msg-sucesso {
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    text-align: center;
 }
 
 .principal {

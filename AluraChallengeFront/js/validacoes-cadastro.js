@@ -1,4 +1,6 @@
-// Selecionando campos do formulário (uma ideia para refatorar depois, com tempo, seria aproveitar os spans de campo inválido que resolvi abandonar depois de não conseguir aplicar a confirmação de senha com os objetos do curso de validação da Alura)
+import { validacoesCadastro } from './validadores.js'
+
+// Selecionando campos do formulário
 
 let botaoCadastro = document.querySelector('#botao-cadastro');
 let btn = document.querySelector('#verSenha');
@@ -24,7 +26,7 @@ let msgErro = document.querySelector('#msg-erro');
 let msgSucesso = document.querySelector('#msg-sucesso');
 
 // Eventos para validação:
-// nome:
+// Nome:
 nome.addEventListener('keyup', () => {
   if (nome.value.length <= 2) {
     labelNome.setAttribute('style', 'color: red');
@@ -37,9 +39,9 @@ nome.addEventListener('keyup', () => {
   };
 });
 
-// email:
+// Email:
 email.addEventListener('keyup', () => {
-  if (!validarEmail(email.value)) {
+  if (!validacoesCadastro.validarEmail(email.value)) {
     labelEmail.setAttribute('style', 'color: red');
     labelEmail.innerHTML = 'Email *Modelo: nome@texto.com';
     validEmail = false;
@@ -51,9 +53,9 @@ email.addEventListener('keyup', () => {
 });
 
 
-// senha:
+// Senha:
 senha.addEventListener('keyup', () => {
-  if (!validarSenha(senha.value)) {
+  if (!validacoesCadastro.validarSenha(senha.value)) {
     erroSenha.setAttribute('style', 'display: block');
     erroSenha.innerHTML = 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e minúscula, um número e não deve conter símbolos';
     validSenha = false;
@@ -64,7 +66,7 @@ senha.addEventListener('keyup', () => {
   };
 });
 
-//confirme senha:
+// Confirmando senha:
 confirmSenha.addEventListener('keyup', () => {
   if (senha.value != confirmSenha.value) {
     labelConfirmSenha.setAttribute('style', 'color: red');
@@ -76,18 +78,6 @@ confirmSenha.addEventListener('keyup', () => {
     validConfirmSenha = true;
   };
 });
-
-// Função para validar a senha:
-function validarSenha(senha) {
-  var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$/;
-  return regex.test(senha);
-}
-
-// Função para validar o email:
-function validarEmail(email) {
-  var regex = /\S+@\S+\.\S+/;
-  return regex.test(email);
-};
 
 
 // Função para cadastrar os dados:
@@ -131,7 +121,7 @@ botaoCadastro.addEventListener('click', (evento) => {
 });
 
 
-// Eventos do botão de olhinho. (ideia para refatorar este seria descobrir como posicionar o olho sempre à direita do input, pois ele sempre sai do lugar com position absolute)
+// Eventos do botão de olhinho. (IDEIA PARA REFATORAR: descobrir como posicionar o olho sempre à direita do input, pois ele sempre sai do lugar com position absolute)
 btn.addEventListener('click', () => {
   let inputSenha = document.querySelector('#senha');
 

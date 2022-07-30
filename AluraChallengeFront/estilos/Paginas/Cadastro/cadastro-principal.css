@@ -24,11 +24,6 @@
     margin-bottom: 0; /*Da terceira em diante 0*/
 }
 
-.input-container--invalido .input-mensagem-erro {
-    color: var(--cor-aviso);
-    display: block;
-}
-
 #msg-erro {
     color: #ff0000;
     background-color: #ffbbbb;
