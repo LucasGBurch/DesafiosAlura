@@ -1,7 +1,10 @@
 # DesafiosAlura
 Pasta para guardar desafios de AluraChallenges e de 7DaysOfCode produzidos para portfolio.
  
-Em breve Lista de Documentação mais detalhada.
+ 
+[OBSERVAÇÃO: Sempre que cito referências nos desafios da Alura, geralmente é algo que busquei externamente para complementar e adaptar aos problemas que quero resolver. Vai que seja útil para quem enfrentou dificuldades semelhantes às minhas]
+ 
+Em breve Lista de Documentação melhor detalhada, editada e estilizada.
 
 
 [Lembretes]
@@ -11,6 +14,15 @@ Em breve Lista de Documentação mais detalhada.
  
  
 [notas provisórias] ALURA CHALLENGE FRONT-END, 4ª EDIÇÃO:
+
  
+1) Referências utilizadas para montar a versão final das validações, autenticações e token para as páginas com formulário (Login, Cadastro, Mensagem e Perfil):
+
+a. Cadastro - https://www.youtube.com/watch?v=VUd2SA9oB2I
+b. Validação e localStorage - https://www.youtube.com/watch?v=THQujIyE7Tg
+c. Autenticação de Login e token - https://www.youtube.com/watch?v=jze3TasX5DA
  
-O estágio atual de construção de API está apenas em fase de início: pensar quais valores devo separar para cada "objeto animal" na página Home, de listagem para adoção.
+2) O estágio atual de construção de API está apenas em fase de início: pensar quais valores devo separar para cada "objeto animal" na página Home, de listagem para adoção. Referências usadas para estudo:
+
+a. Montagem básica para usar JSON Server - https://www.youtube.com/watch?v=UPiGLzKUJw8
+b. (...)
