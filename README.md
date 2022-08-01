@@ -19,8 +19,11 @@ Em breve Lista de Documentação melhor detalhada, editada e estilizada.
 1) Referências utilizadas para montar a versão final das validações, autenticações e token para as páginas com formulário (Login, Cadastro, Mensagem e Perfil):
 
 1.1. Cadastro - https://www.youtube.com/watch?v=VUd2SA9oB2I
+
 1.2. Validação e localStorage - https://www.youtube.com/watch?v=THQujIyE7Tg
+
 1.3. Autenticação de Login e token - https://www.youtube.com/watch?v=jze3TasX5DA
+
  
 2) O estágio atual de construção de API está apenas em fase de início: pensar quais valores devo separar para cada "objeto animal" na página Home, de listagem para adoção. Referências usadas para estudo:
 
