@@ -1,3 +1,37 @@
+#erro-mensagem {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    line-height: 20px;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+#erro-nome {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+#erro-nome-animal {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+#erro-telefone {
+    align-items: center;
+    color: var(--cor-aviso);
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;

@@ -84,6 +84,15 @@
     transition: 800ms;
 }
 
+.cabecalho__logout {
+    align-items: right;
+    background-color: var(--cor-azul);
+    border-radius: 4px;
+    font-style: var(--fonte-geral);
+    font-weight: bold;
+    width: 80px;
+}
+
 @media screen and (min-width: 768px) {
     .cabecalho {
         height: 274px;

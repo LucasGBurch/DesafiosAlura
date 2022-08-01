@@ -1,17 +1,17 @@
 import { validacoesCadastro } from './validadores.js'
 
-// Selecionando campos do formulário
+// Selecionando campos do formulário:
 
 let botaoCadastro = document.querySelector('#botao-cadastro');
 let btn = document.querySelector('#verSenha');
 let btnConfirm = document.querySelector('#verConfirmeSenha');
 
 let nome = document.querySelector('#nome');
-let labelNome = document.querySelector('#label-nome');
+let erroNome = document.querySelector('#erro-nome');
 let validNome = false;
 
 let email = document.querySelector('#email');
-let labelEmail = document.querySelector('#label-email');
+let erroEmail = document.querySelector('#erro-email');
 let validEmail = false;
 
 let senha = document.querySelector('#senha');
@@ -19,7 +19,7 @@ let erroSenha = document.querySelector('#erro-senha');
 let validSenha = false;
 
 let confirmSenha = document.querySelector('#confirm-senha');
-let labelConfirmSenha = document.querySelector('#label-confirm-senha');
+let erroConfirma = document.querySelector('#erro-confirma');
 let validConfirmSenha = false;
 
 let msgErro = document.querySelector('#msg-erro');
@@ -29,12 +29,12 @@ let msgSucesso = document.querySelector('#msg-sucesso');
 // Nome:
 nome.addEventListener('keyup', () => {
   if (nome.value.length <= 2) {
-    labelNome.setAttribute('style', 'color: red');
-    labelNome.innerHTML = 'Nome *Deve ter 3 caracteres ou mais';
+    erroNome.setAttribute('style', 'display: block');
+    erroNome.innerHTML = 'Nome deve ter 3 caracteres ou mais'; 
     validNome = false;
   } else {
-    labelNome.setAttribute('style', 'color: green');
-    labelNome.innerHTML = 'Nome';
+    erroNome.setAttribute('style', 'display: none');
+    erroNome.innerHTML = '';
     validNome = true;
   };
 });
@@ -42,12 +42,12 @@ nome.addEventListener('keyup', () => {
 // Email:
 email.addEventListener('keyup', () => {
   if (!validacoesCadastro.validarEmail(email.value)) {
-    labelEmail.setAttribute('style', 'color: red');
-    labelEmail.innerHTML = 'Email *Modelo: nome@texto.com';
+    erroEmail.setAttribute('style', 'display: block');
+    erroEmail.innerHTML = 'Modelo de E-mail: nome@texto.com'; 
     validEmail = false;
   } else {
-    labelEmail.setAttribute('style', 'color: green');
-    labelEmail.innerHTML = 'Email';
+    erroEmail.setAttribute('style', 'display: none');
+    erroEmail.innerHTML = '';
     validEmail = true;
   };
 });
@@ -69,12 +69,12 @@ senha.addEventListener('keyup', () => {
 // Confirmando senha:
 confirmSenha.addEventListener('keyup', () => {
   if (senha.value != confirmSenha.value) {
-    labelConfirmSenha.setAttribute('style', 'color: red');
-    labelConfirmSenha.innerHTML = 'Confirme sua senha *Igual à senha';
+    erroConfirma.setAttribute('style', 'display: block');
+    erroConfirma.innerHTML = 'Repita a mesma senha'; 
     validConfirmSenha = false;
   } else {
-    labelConfirmSenha.setAttribute('style', 'color: green');
-    labelConfirmSenha.innerHTML = 'Confirme sua senha';
+    erroConfirma.setAttribute('style', 'display: none');
+    erroConfirma.innerHTML = '';
     validConfirmSenha = true;
   };
 });

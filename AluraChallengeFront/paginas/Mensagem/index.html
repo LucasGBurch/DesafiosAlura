@@ -27,7 +27,7 @@
         </button>
       </a>
 
-      <a href="../Inicial/index.html">
+      <a href="../Home/index.html">
         <button class="cabecalho__navegacao--home cabecalho__efeito">
         </button>
       </a>
@@ -37,6 +37,10 @@
       </a>
 
     </nav>
+
+    <h2 id="logado" class="cabecalho__logado"></h2>
+    <a href="../Perfil/index.html">Ver Perfil</a>
+    <button id="logout" class="cabecalho__logout">Logout</button>
 
   </header>
 
@@ -51,18 +55,29 @@
     <form class="principal__formulario">
 
       <fieldset class="principal__formulario--campos">
-        <label for="" class="principal__formulario--label">Nome</label>
-        <input type="text" id="nome" class="principal__formulario--texto" placeholder="Insira seu nome completo" required data-tipo="texto">
+
+        <label for="" class="principal__formulario--label" id=>Nome</label>
+        <input type="text" id="nome" class="principal__formulario--texto" placeholder="Insira seu nome completo"
+          required data-tipo="texto">
+        <span id="erro-nome"></span>
+
         <label for="" class="principal__formulario--label">Telefone</label>
-        <input type="tel" id="telefone" class="principal__formulario--texto" placeholder="Insira seu telefone e/ou whatsapp"
-          pattern="(\(?\d{2}\)?\s)(\d{4,5}\-\d{4})"
+        <input type="tel" id="telefone" class="principal__formulario--texto"
+          placeholder="Insira seu telefone e/ou whatsapp" pattern="(\(?\d{2}\)?\s)(\d{4,5}\-\d{4})"
           title="Formatos aceitos para telefone: (16) 91231-6165 - (16) 3231-6165 - 16 91231-6165 - 16 3231-6165"
           required>
+        <span id="erro-telefone"></span>
+
         <label for="" class="principal__formulario--label">Nome do animal</label>
-        <input type="text" id="nome" class="principal__formulario--texto" placeholder="Por qual animal você se interessou?"
-          required data-tipo="texto">
+        <input type="text" id="nome-animal" class="principal__formulario--texto"
+          placeholder="Por qual animal você se interessou?" required data-tipo="texto">
+        <span id="erro-nome-animal"></span>
+
         <label for="" class="principal__formulario--label">Mensagem</label>
-        <input type="text" id="mensagem" class="principal__formulario--texto" placeholder="Escreva sua mensagem." required>
+        <input type="text" id="mensagem" class="principal__formulario--texto" placeholder="Escreva sua mensagem."
+          required>
+        <span id="erro-mensagem"></span>
+
       </fieldset>
 
       <button class="principal__formulario--botao botao-de-forms" type="submit">Enviar</button>
@@ -75,7 +90,8 @@
     <span>2022 - Desenvolvido por Alura.</span>
   </footer>
 
-  <script src="../../js/validacoes.js" type="module"></script>
+  <script src="../../js/valida-logado.js" type="module"></script>
+  <script src="../../js/validacoes-mensagem.js" type="module"></script>
 </body>
 
 </html>

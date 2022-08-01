@@ -59,17 +59,20 @@ function entrar() {
       window.location.href = '../Home/index.html';
     }, 2500) // 2,5s para mudar para Home
 
-// Para manter logado e GARANTIR essa autenticação, é gerado um token com 2x 16 caracteres hexadecimais. O substring remove os dois primeiros, que são 0. por causa da natureza da Math.random(). O + concatena essas strings:
+    // Para manter logado e GARANTIR essa autenticação, é gerado um token com 2x 16 caracteres hexadecimais. O substring remove os dois primeiros, que são 0. por causa da natureza da Math.random(). O + concatena essas strings:
     let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
 
-// Agora o token é guardado no localStorage e sempre muda a cada login:
+    // Agora o token é guardado no localStorage e sempre muda a cada login:
     localStorage.setItem('token', token);
+
+    // Mostrando nome do Usuário autenticado:
+    localStorage.setItem('userLogado', JSON.stringify(userValid));
 
   } else {
     emailLabel.setAttribute('style', 'color: red');
     senhaLabel.setAttribute('style', 'color: red');
     msgErro.setAttribute('style', 'display: block');
-    msgErro.innerHTML = 'Email ou senha incorretos';
+    msgErro.innerHTML = 'Email ou senha inválidos';
     email.focus();
   };
 };
