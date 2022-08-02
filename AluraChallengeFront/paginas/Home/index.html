@@ -35,18 +35,21 @@
       </a>
 
     </nav>
-    
+
     <h2 id="logado" class="cabecalho__logado"></h2>
     <a href="../Perfil/index.html">Ver Perfil</a>
-    <button
-    id="logout" class="cabecalho__logout">Logout</button>
+    <button id="logout" class="cabecalho__logout">Logout</button>
   </header>
-  
+
   <main class="principal">
 
     <div class="principal__paragrafos">
       <p>Olá! Veja os amigos disponíveis para adoção!</p>
     </div>
+
+<!-- Para quando for rodar/testar API (ainda não está pronta):
+  ENVOLVER A VERSÃO ESTÁTICA DOS PETS, COLOCANDO OS ÚLTIMOS TRACINHOS "--SETA" DEPOIS DO FECHAMENTO DA DIV DE CLASSE "principal_container" E ABRIR O SITE COM "npm run dev"
+-->
 
     <div class="principal__container">
       <div class="principal__imagem">
@@ -178,7 +181,7 @@
       <div class="principal__imagem">
         <img src="../../assets/img/pets/pet8.png" alt="Foto da pet cachorra" class="principal__imagem--pet">
         <div class="principal__dados">
-          <h3 class="principal__dados--nome">Dunga</h3>
+          <h3 class="principal__dados--nome">Amora</h3>
           <span class="principal__dados--descricao">
             45 dias <br />
             Porte grande <br />
@@ -212,6 +215,19 @@
         </div>
       </div>
     </div>
+
+<!-- Para o objeto de API, devo usar:
+  NOME;
+  IDADE;
+  PORTE;
+  TEMPERAMENTO; e
+  CIDADE.
+  ID (que fica por último quando cadastramos um novo);
+
+A IMAGEM provavelmente virá através do template sob esta forma (em vez de ir no objeto db.json):
+`pet${id}.png`
+
+-->
 
   </main>
 
