@@ -47,11 +47,18 @@
       <p>Olá! Veja os amigos disponíveis para adoção!</p>
     </div>
 
-<!-- Para quando for rodar/testar API (ainda não está pronta):
-  ENVOLVER A VERSÃO ESTÁTICA DOS PETS, COLOCANDO OS ÚLTIMOS TRACINHOS "--SETA" DEPOIS DO FECHAMENTO DA DIV DE CLASSE "principal_container" E ABRIR O SITE COM "npm run dev"
--->
+    
+    <div class="principal__container" data-pets>
+      
+      <!-- Para quando for rodar/testar API:
+      1) Envolver a Versão ESTÁTICA DOS PETS - Colocar o fechamento DESTE COMENTÁRIO "--SETA" ANTES DO FECHAMENTO DA DIV DE CLASSE "principal_container";
 
-    <div class="principal__container">
+      2) Logar no site após colocar no terminal o comando: "npx json-server --watch db.json";
+
+      3) Maiores dúvidas ler o README do projeto no GitHub!!!
+
+     -->
+
       <div class="principal__imagem">
         <img src="../../assets/img/pets/pet1.png" alt="Foto do pet cachorro" class="principal__imagem--pet">
         <div class="principal__dados">
@@ -214,20 +221,9 @@
           </a>
         </div>
       </div>
+ 
+
     </div>
-
-<!-- Para o objeto de API, devo usar:
-  NOME;
-  IDADE;
-  PORTE;
-  TEMPERAMENTO; e
-  CIDADE.
-  ID (que fica por último quando cadastramos um novo);
-
-A IMAGEM provavelmente virá através do template sob esta forma (em vez de ir no objeto db.json):
-`pet${id}.png`
-
--->
 
   </main>
 
@@ -236,6 +232,7 @@ A IMAGEM provavelmente virá através do template sob esta forma (em vez de ir n
   </footer>
 
   <script src="../../js/valida-logado.js" type="module"></script>
+  <script src="../../js/controller/lista-pets-controller.js" type="module"></script>
 </body>
 
 </html>
