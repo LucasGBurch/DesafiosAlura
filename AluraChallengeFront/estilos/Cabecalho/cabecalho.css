@@ -19,6 +19,7 @@
 }
 
 .cabecalho__menu {
+    align-items: center;
     height: 40px;
     left: calc(95% - 50px);
     position: absolute;
@@ -148,7 +149,7 @@
 
     .cabecalho__menu {
         height: 72px;
-        left: calc(93% - 150px);
+        left: calc(93% - 20px);
         top: 46px;
         width: 100px;
     }
