@@ -11,26 +11,52 @@
     width: 100%;
 }
 
-.cabecalho-pata {
-    background-image: url('../../assets/img/patas.png'), url('../../assets/formas/forma1.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, top left;
+.cabecalho__logado {
+    color: var(--cor-azul);
+    font-family: var(--fonte-geral);
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.cabecalho-usuario {
-    background-image: url('../../assets/img/usuario.png'), url('../../assets/formas/forma1.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, top left;
-    background-size: initial;
-    background-position-x: 90%, left;
-    background-position-y: 15%, top;
+.cabecalho__menu {
+    height: 40px;
+    left: calc(95% - 50px);
+    position: absolute;
+    top: 40px;
+    width: 64px;
 }
 
-.cabecalho-perfil {
-    background-image: url('../../assets/img/usuario-perfil.png'), url('../../assets/formas/forma1.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top right, top left;
-    background-size: initial;
+.cabecalho__logout, .cabecalho__perfil {
+    align-items: right;
+    background-color: var(--cor-azul);
+    border-radius: 4px;
+    color: var(--cor-azul-esverdeado);
+    display: none;
+    font-size: 12px;
+    font-style: var(--fonte-geral);
+    font-weight: bold;
+    width: 70px;
+}
+
+.cabecalho__perfil--link {
+    color: var(--cor-azul-esverdeado);
+    text-decoration: none;
+}
+
+.cabecalho__menu:hover {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: flex-end;
+}
+
+.cabecalho__menu:hover > .cabecalho__logout {
+    display: block;
+}
+
+.cabecalho__menu:hover > .cabecalho__perfil {
+    display: block;
 }
 
 .cabecalho__navegacao {
@@ -85,12 +111,7 @@
 }
 
 .cabecalho__logout {
-    align-items: right;
-    background-color: var(--cor-azul);
-    border-radius: 4px;
-    font-style: var(--fonte-geral);
-    font-weight: bold;
-    width: 80px;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -98,6 +119,12 @@
         height: 274px;
         min-width: 561px;
     }
+
+    .cabecalho__menu {
+        height: 48px;
+        top: 52px;
+    }
+
     .cabecalho__navegacao {
         
         grid-column: 1 / 4;
@@ -118,6 +145,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    .cabecalho__menu {
+        height: 72px;
+        left: calc(93% - 150px);
+        top: 46px;
+        width: 100px;
+    }
+
     .cabecalho__navegacao {
         
         grid-column: 1 / 3;

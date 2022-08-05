@@ -67,7 +67,6 @@
 
 .body-perfil {
     background-image: url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma1.png');
-    background-position: top left, top right;
     background-repeat: no-repeat, no-repeat;
     background-size: 40px 40px, 352px 295px;
 
