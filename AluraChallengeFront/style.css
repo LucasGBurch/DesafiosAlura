@@ -42,36 +42,36 @@
 }
 
 .body-home {
-    background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png');
-    background-position: top right, top left;
+    background-image: url('./assets/formas/forma1.png');
+    background-position: top left;
     background-repeat: no-repeat;
-    background-size: 40px 40px, 352px 295px;
+    background-size: 352px 295px;
 
-    background-position-y: 40px, top;
-    background-position-x: calc(100% - 29px), left;
+    background-position-y: top;
+    background-position-x: left;
 
     height: 917px;
 }
 
 .body-mensagem {
-    background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png');
-    background-position: top right, top left;
+    background-image: url('./assets/formas/forma1.png');
+    background-position: top left;
     background-repeat: no-repeat;
-    background-size: 40px 40px, 352px 295px;
+    background-size: 352px 295px;
 
-    background-position-y: 40px, top;
-    background-position-x: calc(100% - 29px), left;
+    background-position-y: top;
+    background-position-x: left;
 
     height: 917px;
 }
 
 .body-perfil {
-    background-image: url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma1.png');
-    background-repeat: no-repeat, no-repeat;
-    background-size: 40px 40px, 352px 295px;
+    background-image: url('./assets/formas/forma1.png');
+    background-repeat: no-repeat;
+    background-size: 352px 295px;
 
-    background-position-y: 40px, top;
-    background-position-x: calc(100% - 29px), left;
+    background-position-y: top;
+    background-position-x: left;
 
     height: 917px;
 }
@@ -168,31 +168,31 @@
     }
 
     .body-perfil {
-        background-image: url('./assets/img/usuario-perfil.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-        background-size: 48px 48px, 561px 470px, 134px 664px;
+        background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+        background-size: 561px 470px, 134px 664px;
 
-        background-position-y: 52px, top, center;
-        background-position-x: calc(100% - 42px), left, right;
+        background-position-y: top, center;
+        background-position-x: left, right;
 
         height: 1255px;
     }
 
     .body-home {
-        background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-        background-size: 48px 48px, 561px 470px, 0px 0px;
+        background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+        background-size: 561px 470px, 0px 0px;
 
-        background-position-y: 52px, top, center;
-        background-position-x: calc(100% - 42px), left;
+        background-position-y: top, center;
+        background-position-x: left;
 
         height: 1200px;
     }
 
     .body-mensagem {
-        background-image: url('./assets/img/usuario.png'), url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
-        background-size: 48px 48px, 561px 470px, 134px 664px;
+        background-image: url('./assets/formas/forma1.png'), url('./assets/formas/forma2.png');
+        background-size: 561px 470px, 134px 664px;
 
-        background-position-y: 52px, top, center;
-        background-position-x: calc(100% - 42px), left, right;
+        background-position-y: top, center;
+        background-position-x: left, right;
 
         height: 1200px;
     }
@@ -218,20 +218,20 @@
     }
 
     .body-perfil {
-        background-size: 64px 64px, 561px 470px, 134px 664px;
+        background-size: 561px 470px, 134px 664px;
 
-        background-position-y: 46px, top, center;
-        background-position-x: calc(100% - 166px), left, right;
+        background-position-y: top, center;
+        background-position-x: left, right;
         height: 1025px;
 
         height: 1148px;
     }
 
     .body-home {
-        background-size: 56px 56px, 561px 470px, 134px 664px;
+        background-size: 561px 470px, 134px 664px;
 
-        background-position-y: 46px, top, center;
-        background-position-x: calc(100% - 174px), left, right;
+        background-position-y: top, center;
+        background-position-x: left, right;
         height: 1025px;
     }
 }

@@ -4,10 +4,6 @@ let nome = document.querySelector('#nome');
 let erroNome = document.querySelector('#erro-nome');
 let validNome = false;
 
-let nomeAnimal = document.querySelector('#nome-animal');
-let erroNomeAnimal = document.querySelector('#erro-nome-animal');
-let validNomeAnimal = false;
-
 let telefone = document.querySelector('#telefone');
 let erroTelefone = document.querySelector('#erro-telefone');
 let validTelefone = false;
@@ -15,6 +11,7 @@ let validTelefone = false;
 let mensagem = document.querySelector('#mensagem');
 let erroMensagem = document.querySelector('#erro-mensagem');
 let validMensagem = false;
+
 
 // Validando nome:
 nome.addEventListener('keyup', () => {
@@ -42,19 +39,6 @@ telefone.addEventListener('keyup', () => {
   };
 });
 
-// Validando nome do pet:
-nomeAnimal.addEventListener('keyup', () => {
-  if (nomeAnimal.value.length <= 1) {
-    erroNomeAnimal.setAttribute('style', 'display: block');
-    erroNomeAnimal.innerHTML = 'Nome do animal deve ter 2 caracteres ou mais'; 
-    validNomeAnimal = false;
-  } else {
-    erroNomeAnimal.setAttribute('style', 'display: none');
-    erroNomeAnimal.innerHTML = '';
-    validNomeAnimal = true;
-  };
-});
-
 // Validando mensagem:
 mensagem.addEventListener('keyup', () => {
   if (mensagem.value.length <= 29) {
@@ -67,4 +51,3 @@ mensagem.addEventListener('keyup', () => {
     validMensagem = true;
   };
 });
-

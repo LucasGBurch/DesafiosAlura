@@ -20,11 +20,14 @@
 
 .cabecalho__menu {
     align-items: center;
-    height: 40px;
+    height: 120px;
     left: calc(95% - 50px);
     position: absolute;
     top: 40px;
-    width: 64px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .cabecalho__logout, .cabecalho__perfil {
@@ -44,20 +47,18 @@
     text-decoration: none;
 }
 
-.cabecalho__menu:hover {
-    
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    justify-content: flex-end;
-}
-
 .cabecalho__menu:hover > .cabecalho__logout {
     display: block;
 }
 
 .cabecalho__menu:hover > .cabecalho__perfil {
     display: block;
+}
+
+.cabecalho__menu--perfil {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
 
 .cabecalho__navegacao {
@@ -111,10 +112,6 @@
     transition: 800ms;
 }
 
-.cabecalho__logout {
-    
-}
-
 @media screen and (min-width: 768px) {
     .cabecalho {
         height: 274px;
@@ -122,8 +119,12 @@
     }
 
     .cabecalho__menu {
-        height: 48px;
         top: 52px;
+    }
+
+    .cabecalho__menu--perfil {
+        height: 48px;
+        width: 48px;
     }
 
     .cabecalho__navegacao {
@@ -148,10 +149,13 @@
 @media screen and (min-width: 1024px) {
 
     .cabecalho__menu {
-        height: 72px;
-        left: calc(93% - 20px);
+        left: calc(88% - 100px);
         top: 46px;
-        width: 100px;
+    }
+
+    .cabecalho__menu--perfil {
+        height: 64px;
+        width: 64px;
     }
 
     .cabecalho__navegacao {

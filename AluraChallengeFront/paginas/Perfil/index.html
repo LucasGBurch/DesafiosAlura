@@ -42,6 +42,8 @@
 
     <div class="cabecalho__menu">
 
+      <img class="cabecalho__menu--perfil" src="../../assets/img/usuario-perfil.png" alt="Imagem de Perfil">
+
       <button class="cabecalho__perfil">
         <a href="../Perfil/index.html" class="cabecalho__perfil--link">Ver Perfil</a>
       </button>
@@ -66,22 +68,33 @@
       <fieldset class="principal__formulario--campos">
 
         <label for="" class="principal__formulario--label">Foto</label>
-        <input type="image" src="../../assets/img/fotoperfil.png" class="principal__formulario--perfil"
-          alt="Foto de Perfil de uma pessoa" id="imagem__perfil">
+
+        <label for="imagem__perfil">
+          <span class="principal__formulario--imagem">
+
+          </span>
+        </label>
+        <input type="file" name="imagem__perfil" id="imagem__perfil">
         <span class="principal__formulario--instrucao">Clique na foto para editar</span>
 
         <label for="" class="principal__formulario--label">Nome</label>
-        <input type="text" class="principal__formulario--texto" placeholder="Joana Magalhães" required
+        <input type="text" id="nome" class="principal__formulario--texto" placeholder="Joana Magalhães" required
           data-tipo="texto">
+        <span id="erro-nome"></span>
+
         <label for="" class="principal__formulario--label">Telefone</label>
-        <input type="tel" class="principal__formulario--texto" placeholder="55 11 XXXXXXXXX" required
+        <input type="tel" id="telefone" class="principal__formulario--texto" placeholder="55 11 XXXXXXXXX" required
           data-tipo="telefone">
+        <span id="erro-telefone"></span>
+
         <label for="" class="principal__formulario--label">Cidade</label>
         <input type="text" class="principal__formulario--texto" placeholder="São Paulo" required data-tipo="texto">
+
         <label for="" class="principal__formulario--label">Mensagem</label>
-        <textarea name="" id="" cols="30" rows="15" class="principal__formulario--texto"
+        <textarea name="" id="mensagem" cols="30" rows="15" class="principal__formulario--texto"
           placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
-          
+        <span id="erro-mensagem"></span>
+
       </fieldset>
 
       <button class="principal__botao botao-de-forms" type="submit">Salvar</button>
@@ -95,6 +108,8 @@
   </footer>
 
   <script src="../../js/valida-logado.js" type="module"></script>
+  <script src="../../js/validacoes-perfil.js" type="module"></script>
+  <script src="../../js/perfil-edicao.js" type="module"></script>
 </body>
 
 </html>

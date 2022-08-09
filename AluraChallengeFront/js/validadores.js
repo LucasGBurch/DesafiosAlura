@@ -27,3 +27,4 @@ export const validacoesCadastro = {
 export const validacoesMensagem = {
   validarTelefone,
 }
+
