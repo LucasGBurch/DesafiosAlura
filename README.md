@@ -1,5 +1,5 @@
 # DesafiosAlura
-Pasta para guardar desafios de AluraChallenges e de 7DaysOfCode produzidos para portfolio.
+Pasta para guardar desafios **com HTML/CSS/JS** de AluraChallenges e de 7DaysOfCode produzidos para portfolio.
  
  
 [OBSERVAÇÃO: Sempre que cito referências nos desafios da Alura, geralmente é algo que busquei externamente para complementar e adaptar aos problemas que quero resolver. Vai que seja útil para quem enfrentou dificuldades semelhantes às minhas]
