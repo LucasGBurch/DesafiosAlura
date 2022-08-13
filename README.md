@@ -40,11 +40,11 @@ Criação do package.json com "npm init -y";
 
 Criação do package-lock.json com "npm i json-server --save"
 
-[ALERTA! EM VIRTUDE DO TAMANHO DA PASTA node_modules, QUEM BAIXAR PARA TESTAR PRECISARÁ RODAR EStE COMANDO:
+[ALERTA! EM VIRTUDE DO TAMANHO DA PASTA node_modules, QUEM BAIXAR PARA TESTAR PRECISARÁ RODAR ESTE COMANDO:
 
 - "npm i json-server"
 
- QUE INSTALA A BIBLIOTECA DO JSON SERVER, PORQUE ELE NÃO ESTARÁ NOS ARQUIVOS DO GITHUB (por causa do .gitignore)];
+ ELE INSTALA A BIBLIOTECA DO JSON SERVER, PORQUE ELE NÃO ESTARÁ NOS ARQUIVOS DO GITHUB (por causa do .gitignore)];
 
 Execução do JSON server com o arquivo que guarda os objetos, como se fosse um banco de dados, com "npx json-server --watch db.json"; "dev" é o script que salvamos em package.json e a porta de execução 3000;
 
